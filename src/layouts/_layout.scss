@@ -1,0 +1,45 @@
+.contained {
+    width: $container-size;
+    margin: 0 auto;
+}
+
+.top-nav {
+    background: $jumbotron-bg;
+
+    > div {
+        @extend .contained;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 2em 0;
+    }
+
+    a {
+        color: $black;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        margin-right: 2em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+a.btn {
+    display: flex;
+    padding: 1em;
+    background-image: linear-gradient(-90deg, #F16860 0%, #FCB76E 97%);
+    border-radius: 50px;
+    color: $white;
+}
