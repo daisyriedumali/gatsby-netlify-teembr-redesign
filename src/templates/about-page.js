@@ -15,6 +15,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                 {title}
               </h2>
               <PageContent className="content" content={content} />
+              <span>Custom Data</span>
             </div>
           </div>
         </div>
