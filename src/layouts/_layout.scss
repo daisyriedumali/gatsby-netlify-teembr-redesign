@@ -3,6 +3,7 @@
     margin: 0 auto;
 }
 
+
 .top-nav {
     background: $jumbotron-bg;
 
@@ -33,6 +34,18 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+}
+
+.jumbotron {
+    background: $jumbotron-bg;
+    height: 100vh;
+
+    > div {
+        @extend .contained;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
     }
 }
 

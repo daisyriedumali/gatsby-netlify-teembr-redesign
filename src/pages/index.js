@@ -8,12 +8,14 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <section className="section">
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories!!!</h1>
+      <section className="jumbotron">
+        <div>
+          <div>
+            <h2>We help businesses create products and brands</h2>
+            <p>Helping businesses with everything from branding, product design and social media strategies.</p>
+            <a href="" className="btn">Contact Us</a>
           </div>
-          hello
+          <img src="/img/jumbotron-img.png" />
         </div>
       </section>
     )
