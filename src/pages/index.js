@@ -1,6 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import ServicesSection from '../components/ServicesSection';
+import CaseStudies from '../components/CaseStudies';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -8,16 +9,20 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <section className="jumbotron">
-        <div>
+      <Fragment>
+        <section className="jumbotron">
           <div>
-            <h2>We help businesses create products and brands</h2>
-            <p>Helping businesses with everything from branding, product design and social media strategies.</p>
-            <a href="" className="btn">Contact Us</a>
+            <div>
+              <h2>We help businesses create products and brands</h2>
+              <p>Helping businesses with everything from branding, product design and social media strategies.</p>
+              <a href="" className="btn">Contact Us</a>
+            </div>
+            <img src="/img/jumbotron-img.png" />
           </div>
-          <img src="/img/jumbotron-img.png" />
-        </div>
-      </section>
+        </section>
+        <ServicesSection />
+        <CaseStudies />
+      </Fragment>
     )
   }
 }
