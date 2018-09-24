@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import ServicesSection from '../components/ServicesSection';
 import CaseStudies from '../components/CaseStudies';
@@ -9,7 +9,7 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <Fragment>
+      <div>
         <section className="jumbotron">
           <div>
             <div>
@@ -19,10 +19,10 @@ export default class IndexPage extends React.Component {
             </div>
             <img src="/img/jumbotron-img.png" />
           </div>
+          <ServicesSection />
+          <CaseStudies />
         </section>
-        <ServicesSection />
-        <CaseStudies />
-      </Fragment>
+      </div>
     )
   }
 }
