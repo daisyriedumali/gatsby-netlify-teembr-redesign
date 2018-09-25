@@ -39,14 +39,41 @@
 
 .jumbotron {
     background: $jumbotron-bg;
-    height: 100vh;
+    height: calc(100vh - 115px);
+    position: relative;
 
     > div {
         @extend .contained;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-content: center;
+        height: 100%;
+        justify-content: center;
+
+        h2 {
+            margin: 0;
+            font-size: 2em;
+            width: 50%;
+            line-height: 1.25;
+        }
+        p {
+            margin: 2em 0;
+            width: 50%;
+            line-height: 1.5;
+            font-size: 1.25em;
+        }
+        a {
+            width: 200px;
+        }
     }
+
+    img {
+        height: 90%;;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
 }
 
 .section-title {
