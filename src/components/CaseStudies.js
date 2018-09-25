@@ -5,7 +5,7 @@ const CaseStudies = ({ iconfill }) => {
     return (
         <div className="case-studies">
             <div>
-                <h3>Case Studies</h3>
+                <h3 className="section-title">Case Studies</h3>
                 <div className="case-studies-cards">
                     <CaseStudiesCard />
                     <CaseStudiesCard />

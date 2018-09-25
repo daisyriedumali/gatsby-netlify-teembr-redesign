@@ -5,7 +5,7 @@ const ServicesSection = ({ iconfill }) => {
     return (
         <div className="services-section">
             <div>
-                <h3>Our Services</h3>
+                <h3 className="section-title">Our Services</h3>
                 <div className="services-cards">
                     <ServicesCard />
                     <ServicesCard />

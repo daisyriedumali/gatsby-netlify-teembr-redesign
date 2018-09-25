@@ -1,28 +1,20 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
+import TestimonialCard from '../components/TestimonialCard'
 
-const Testimonials = ({ testimonials }) => (
-  <div>
-    {testimonials.map(testimonial => (
-      <article key={v4()} className="message">
-        <div className="message-body">
-          {testimonial.quote}
-          <br />
-          <cite> – {testimonial.author}</cite>
+const Testimonials = ({ iconfill }) => {
+  return (
+    <div className="testimonials">
+        <div>
+            <h3 className="section-title">Testimonials</h3>
+            <div className="testimonial-cards">
+                <TestimonialCard />
+                <TestimonialCard />
+                <TestimonialCard />
+            </div>
+            <a href="/">See All Testimonials</a>
         </div>
-      </article>
-    ))}
-  </div>
-)
-
-Testimonials.propTypes = {
-  testimonials: PropTypes.arrayOf(
-    PropTypes.shape({
-      quote: PropTypes.string,
-      author: PropTypes.string,
-    })
-  ),
+    </div>
+  );
 }
 
 export default Testimonials

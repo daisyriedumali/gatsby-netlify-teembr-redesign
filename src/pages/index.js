@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ServicesSection from '../components/ServicesSection';
 import CaseStudies from '../components/CaseStudies';
+import Testimonials from '../components/Testimonials';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -11,16 +12,19 @@ export default class IndexPage extends React.Component {
     return (
       <div>
         <section className="jumbotron">
-          <div>
             <div>
               <h2>We help businesses create products and brands</h2>
               <p>Helping businesses with everything from branding, product design and social media strategies.</p>
               <a href="" className="btn">Contact Us</a>
             </div>
             <img src="/img/jumbotron-img.png" />
-          </div>
-          <ServicesSection />
-          <CaseStudies />
+        </section>
+        <ServicesSection />
+        <CaseStudies />
+        <Testimonials />
+        <section className="call-to-action">
+            <p>Interested in collaborating with us?</p>
+            <a href="" className="btn">Contact Us</a>
         </section>
       </div>
     )
