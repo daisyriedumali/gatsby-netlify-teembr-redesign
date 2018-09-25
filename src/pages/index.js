@@ -12,12 +12,14 @@ export default class IndexPage extends React.Component {
     return (
       <div>
         <section className="jumbotron">
+          <div>
             <div>
               <h2>We help businesses create products and brands</h2>
               <p>Helping businesses with everything from branding, product design and social media strategies.</p>
               <a href="" className="btn">Contact Us</a>
             </div>
             <img src="/img/jumbotron-img.png" />
+          </div>
         </section>
         <ServicesSection />
         <CaseStudies />
