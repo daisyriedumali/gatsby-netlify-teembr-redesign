@@ -7,7 +7,11 @@ import logo from '../img/logo.svg'
 const Navbar = () => (
   <div className="top-nav">
     <div>
-      <h1>Teembr</h1>
+      <h1>
+        <a href="/">
+          <img src="img/svg/teembr-logo.svg" />
+        </a>
+      </h1>
       <nav>
         <a href="">Our Services</a>
         <a href="">Case Studies</a>

@@ -1,3 +1,9 @@
+$breakpoints: (
+    'desktop': 1024px,
+    'tablet': 768px,
+    'mobile': 480px
+);
+
 // Colors
 $jumbotron-bg: #F3F3FF;
 $text-color: #111111;
