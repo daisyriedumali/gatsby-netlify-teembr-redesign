@@ -27,8 +27,8 @@ const data = [
 const ServicesSection = ({ iconfill }) => {
 
     const getServicesCards = () => {
-        let cards = data.map(function(datum){
-            return <ServicesCard data={datum}/>;
+        let cards = data.map(function(datum, index){
+            return <ServicesCard data={datum} key={index}/>;
         });
         
         return cards;
@@ -42,12 +42,12 @@ const ServicesSection = ({ iconfill }) => {
                     {getServicesCards()}
                 </div>
                 <div className="services-logos">
-                    <img src="/img/services-logos/shopify-experts.png"/>
-                    <img src="/img/services-logos/aws.png"/>
-                    <img src="/img/services-logos/paypal.png"/>
-                    <img src="/img/services-logos/mailchimp.png"/>
-                    <img src="/img/services-logos/envato.png"/>
-                    <img src="/img/services-logos/printful.png"/>
+                    <img key={1} src="/img/services-logos/shopify-experts.png"/>
+                    <img key={2} src="/img/services-logos/aws.png"/>
+                    <img key={3} src="/img/services-logos/paypal.png"/>
+                    <img key={4} src="/img/services-logos/mailchimp.png"/>
+                    <img key={5} src="/img/services-logos/envato.png"/>
+                    <img key={6} src="/img/services-logos/printful.png"/>
                 </div>
             </div>
         </div>

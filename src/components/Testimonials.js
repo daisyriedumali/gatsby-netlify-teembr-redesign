@@ -22,8 +22,8 @@ const data = [
 const Testimonials = ({ iconfill }) => {
   
   const getTestimonialCards = () => {
-    let cards = data.map(function(datum){
-        return <TestimonialCard data={datum}/>;
+    let cards = data.map(function(datum, index){
+        return <TestimonialCard data={datum} key={index}/>;
     });
     
     return cards;
