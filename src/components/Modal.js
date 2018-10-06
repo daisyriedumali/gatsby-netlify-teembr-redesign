@@ -22,8 +22,11 @@ class Modal extends Component {
         return (
             <div className="modal-outerspace">
                 <div className="modal-innerspace">
-                    <span className="modal-close" onClick={this.showModal}>x</span>
-                    {this.props.msg}
+                    <img src="/img/svg/close-button.svg" onClick={this.showModal} className="modal-close" />
+                    <h4>{this.props.title}</h4>
+                    <p>{this.props.msg}</p>
+                    <a href={this.props.cta} className="cta btn">{this.props.ctaMsg}</a>
+                    <a href={this.props.otherLink}>{this.props.otherLinkMsg}</a>
                 </div>
             </div>
         )
