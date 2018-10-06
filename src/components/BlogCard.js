@@ -1,17 +1,19 @@
 import React from 'react'
 
-const BlogCard = ({ iconfill }) => {
+const BlogCard = ({ iconfill, data }) => {
     return (
         <div className="blog-card">
-            <img src="/img/services/services-sketch-01.png" />
+            <img src={"/img/blogs/" + data.image} />
             <div>
-                <span>Errol B. Tiozon and 1 other</span>
-                <h2>Why investing in branding is important for...</h2>
-                <p>The Harvard Review once warned the growing number of small business owners that there will soon be so many small businesses, owners will</p>
-                <div>
-                    <img src="" />
-                    <a href="/">Errol B. Tiozon</a>
-                    <span>Sep 5</span>
+                {data.claps}
+                <h2>{data.title}</h2>
+                <p>{data.snippet}</p>
+                <div className="author-info">
+                    <img src={"/img/blogs/" + data.headshot} />
+                    <div>
+                        <a href={data.link}>{data.author}</a>
+                        <span>{data.date}</span>
+                    </div>
                 </div>
             </div>
         </div>
