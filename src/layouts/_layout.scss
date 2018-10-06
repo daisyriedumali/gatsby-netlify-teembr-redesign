@@ -301,3 +301,18 @@ a.btn {
         }
     }
 }
+
+.privacy {
+    > div {
+        @extend .contained;
+        padding: 2em;
+
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.75em; margin: 2em 0 1em; }
+        h4 { font-size: 1.5em; }
+
+        p, ul {
+            line-height: 1.5em;
+        }
+    }
+}
