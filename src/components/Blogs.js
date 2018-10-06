@@ -64,7 +64,13 @@ const Blogs = ({ iconfill }) => {
 
     return (
         <div className="blog">
-            <div>
+            <div className="blog-nav">
+                <nav>
+                    <a href="/">Design Resources</a>
+                    <a href="/">Articles</a>
+                </nav>
+            </div>
+            <div className="blog-cards-wrapper">
                 <div className="blog-cards">
                     {getBlogCards()}
                 </div>
