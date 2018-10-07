@@ -22,7 +22,9 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Main Image", name: "image", widget: "image"}
+      - {label: "Author Image", name: "authorImage", widget: "image"}
+      - {label: "Author Name", name: "authorName", widget: "string"}
 
   - name: "pages"
     label: "Pages"

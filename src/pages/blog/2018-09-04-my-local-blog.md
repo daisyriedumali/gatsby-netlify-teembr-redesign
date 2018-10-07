@@ -6,5 +6,7 @@ description: Local Description
 tags:
   - local
 image: /img/chemex.jpg
+authorImage: /img/flavor_wheel.jpg
+authorName: Errol B. Tiozon
 ---
 Main Body of Blog

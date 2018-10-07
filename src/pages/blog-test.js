@@ -33,8 +33,8 @@ export default class BlogTest extends React.Component {
                             image    : post.frontmatter.image,
                             title    : post.frontmatter.title,
                             snippet  : post.excerpt,
-                            headshot : '/errol.jpg',
-                            author   : 'Errol B. Tiozon',
+                            headshot : post.frontmatter.authorImage,
+                            author   : post.frontmatter.authorName,
                             link     : post.fields.slug,
                             date     : post.frontmatter.date
                           }}/>
@@ -73,6 +73,8 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             image
+            authorImage
+            authorName
           }
         }
       }

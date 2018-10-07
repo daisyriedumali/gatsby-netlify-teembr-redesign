@@ -7,6 +7,8 @@ tags:
   - brewing
   - chemex
 image: /img/chemex.jpg
+authorImage: /img/flavor_wheel.jpg
+authorName: Errol B. Tiozon
 ---
 ![chemex](/img/chemex.jpg)
 
