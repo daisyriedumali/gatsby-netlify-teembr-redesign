@@ -9,8 +9,8 @@ tags:
   - flavor
   - tasting
 image: /img/flavor_wheel.jpg
-authorImage: /img/flavor_wheel.jpg
-authorName: Errol B. Tiozon
+authorImage: /img/products-grid3.jpg
+authorName: Daisy D.
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
