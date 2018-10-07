@@ -9,6 +9,8 @@ tags:
   - flavor
   - tasting
 image: /img/flavor_wheel.jpg
+authorImage: /img/products-grid3.jpg
+authorName: Daisy D.
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
