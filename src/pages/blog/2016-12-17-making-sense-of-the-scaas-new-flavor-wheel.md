@@ -15,7 +15,7 @@ The SCAA updated the wheel to reflect the finer nuances needed to describe flavo
 
 aS
 
-![](/img/chemex.jpg)
+![asd](/img/chemex.jpg)
 
 While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
 
