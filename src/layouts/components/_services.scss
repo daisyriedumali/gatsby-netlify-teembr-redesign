@@ -1,0 +1,76 @@
+.services-section {
+    padding: 2em 0;
+    > div {
+        @extend .contained;
+    }
+    h3 {
+        text-align: center;
+    }
+    .services-cards {
+        margin-bottom: 3em;
+        padding: 0 2em 2em;
+        overflow: auto;
+        display: flex;
+
+        @include mappy-bp(tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2em;
+        }
+
+        @include mappy-bp(desktop) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    .services-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        grid-gap: 2em;
+        padding: 2em;
+
+        @include mappy-bp(tablet) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include mappy-bp(desktop) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    .services-card {
+        background: $white;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #EEEEEE;
+        box-shadow: 0 5px 4px 0 rgba(225,225,225,0.50);
+        flex: 1 0 20em;
+        margin-right: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include mappy-bp(tablet) {
+           margin-right: 0; 
+        }
+
+        @include mappy-bp(desktop) {
+            width: auto;
+        }
+
+        img {
+            width: 100%;
+            height: 195px;
+            object-fit: cover;
+        }
+        h3 {
+            margin: 0;
+            padding: 1rem;
+        }
+        .btn {
+            margin: 0 1rem 1rem;
+        }
+    }
+}

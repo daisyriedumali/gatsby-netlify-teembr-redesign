@@ -1,6 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: daisyriedumali/gatsby-netlify-teembr-redesign
   branch: master
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
 
 media_folder: static/img
 public_folder: /img
@@ -18,6 +22,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Image", name: "image", widget: "image"}
 
   - name: "pages"
     label: "Pages"

@@ -8,7 +8,7 @@ description: >-
 tags:
   - flavor
   - tasting
-image: /img/jumbotron.jpg
+image: /img/flavor_wheel.jpg
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 

@@ -1,28 +1,45 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
+import TestimonialCard from '../components/TestimonialCard'
 
-const Testimonials = ({ testimonials }) => (
-  <div>
-    {testimonials.map(testimonial => (
-      <article key={v4()} className="message">
-        <div className="message-body">
-          {testimonial.quote}
-          <br />
-          <cite> – {testimonial.author}</cite>
+const data = [
+    {
+        name        : 'Chad Adam Shiflett',
+        testimonial : 'I have to say Teembr has made my business successful. They work with you on every design making sure its exactly what you need. the customer service and overall friendliness is unmatched. Best in the design industry and will be my go to from here on! Best in the Business!',
+        image       : 'chad_adam_shiflett.jpg'
+    },
+    {
+        name        : 'Levon Darakchyan',
+        testimonial : 'I cannot recommend Teembr enough. Amazing customer support and fast turnaround time. Super friendly as well. All projects i have done with Teembr have blew me away starting from their creative to their excellent customer support. I cannot recommend enough. If you are in need of designs definitely hit them up.',
+        image       : 'levon_darakchyan.jpg'
+    },
+    {
+        name        : 'Noure Ddine',
+        testimonial : 'Awesome designers and amazing customer support. I am so happy working with them, also, thank you with your marketing advice. Highly Recommended!',
+        image       : 'noure_ddine.jpg'
+    }
+];
+
+const Testimonials = ({ iconfill }) => {
+  
+  const getTestimonialCards = () => {
+    let cards = data.map(function(datum, index){
+        return <TestimonialCard data={datum} key={index}/>;
+    });
+    
+    return cards;
+  }
+
+  return (
+    <div className="testimonials">
+        <div>
+            <h3 className="section-title">Testimonials</h3>
+            <div className="testimonial-cards">
+                {getTestimonialCards()}
+            </div>
+            <a href="/">See All Testimonials</a>
         </div>
-      </article>
-    ))}
-  </div>
-)
-
-Testimonials.propTypes = {
-  testimonials: PropTypes.arrayOf(
-    PropTypes.shape({
-      quote: PropTypes.string,
-      author: PropTypes.string,
-    })
-  ),
+    </div>
+  );
 }
 
 export default Testimonials

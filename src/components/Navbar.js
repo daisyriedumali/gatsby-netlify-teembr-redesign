@@ -1,41 +1,57 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React, { Component } from 'react';
+class Navbar extends Component {
+  
+  componentDidMount() {
+    document.querySelector('.burger-menu').addEventListener('click', function(e) {
+        let el = document.querySelector('.mobile-menu');
+        el.classList.add('show');
+    });
+    document.querySelector('.close-button').addEventListener('click', function(e) {
+        let el = document.querySelector('.mobile-menu');
+        el.classList.remove('show');
+    });
+  }
 
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+  render() {
+    return (
+      <div>
+        <div className="top-nav">
+          <div>
+            <img src="img/svg/burger-menu.svg" className="burger-menu" />
+            <h1>
+              <a href="/">
+                <img src="img/svg/teembr-logo.svg" />
+              </a>
+            </h1>
+            <nav>
+              <a href="/">Our Services</a>
+              <a href="">Case Studies</a>
+              <a href="">Testimonials</a>
+              <a href="/blog">Blog</a>
+              <a href="/about-us">About Us</a>
+              <a href="" className="btn">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+        <div className="mobile-menu">
+          <img src="img/svg/close-button.svg" className="close-button" />
+          <h1>
+            <a href="/">
+              <img src="img/svg/teembr-logo.svg" />
+            </a>
+          </h1>
+          <nav>
+            <a href="">Our Services</a>
+            <a href="">Case Studies</a>
+            <a href="">Testimonials</a>
+            <a href="/blog">Blog</a>
+            <a href="/about-us">About Us</a>
+            <a href="" className="btn">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+    )
+  }
+}
 
-const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-          </figure>
-        </Link>
-      </div>
-      <div className="navbar-start">
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
-      </div>
-      <div className="navbar-end">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
-      </div>
-    </div>
-  </nav>
-)
-
-export default Navbar
+export default Navbar;

@@ -1,0 +1,56 @@
+.testimonials {
+    padding: 2em 0;
+
+    > div {
+        @extend .contained;
+
+        > a {
+            display: block;
+            text-align: center;
+            margin: 1em auto;
+            font-size: 1.25em;
+            font-weight: bold;
+        }
+    }
+    h3 {
+        text-align: center;
+    }
+    .testimonial-cards {
+        margin-bottom: 3em;
+        padding: 0 2em 2em;
+        overflow: auto;
+        display: flex;
+        @include mappy-bp(desktop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 2em;
+            margin-bottom: 3em;
+        }
+    }
+    .testimonial-card {
+        background: $white;
+        padding: 1em;
+        border-radius: 10px;
+        border: 1px solid #EEEEEE;
+        box-shadow: 0 5px 4px 0 rgba(225,225,225,0.50);
+        flex: 1 0 17em;
+        margin-right: 2em;
+
+        @include mappy-bp(desktop) {
+            width: auto;
+            margin: 0;
+        }
+        img {
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            border: 5px solid #D8D8D8;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
