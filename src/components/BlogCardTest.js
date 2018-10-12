@@ -1,9 +1,10 @@
 import React from 'react'
+import imagePathHelper from '../components/helper/imagePathHelper'
 
 const BlogCardTest = ({ iconfill, data }) => {
     return (
         <div className="blog-card">
-            <img src={data.image} />
+            <img src={imagePathHelper(data.image)} />
             <div>
                 {data.claps}
                 <h2>{data.title}</h2>

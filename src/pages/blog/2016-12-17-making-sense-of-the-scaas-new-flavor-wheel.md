@@ -8,8 +8,8 @@ description: >-
 tags:
   - flavor
   - tasting
-image: /img/flavor_wheel.jpg
-authorImage: /img/products-grid3.jpg
+image: /img/blog/flavor_wheel.jpg
+authorImage: /img/blog/products-grid3.jpg
 authorName: Daisy D.
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
@@ -18,7 +18,7 @@ The SCAA updated the wheel to reflect the finer nuances needed to describe flavo
 
 aS
 
-![asd](/img/chemex.jpg)
+![asd](/img/blog/chemex.jpg)
 
 While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
 

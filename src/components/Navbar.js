@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import imagePathHelper from '../components/helper/imagePathHelper'
+
 class Navbar extends Component {
   
   componentDidMount() {
@@ -17,10 +19,10 @@ class Navbar extends Component {
       <div>
         <div className="top-nav">
           <div>
-            <img src="img/svg/burger-menu.svg" className="burger-menu" />
+            <img src={imagePathHelper('svg/burger-menu.svg')} className="burger-menu" />
             <h1>
               <a href="/">
-                <img src="img/svg/teembr-logo.svg" />
+                <img src={imagePathHelper('svg/teembr-logo.svg')}/>
               </a>
             </h1>
             <nav>
@@ -34,10 +36,10 @@ class Navbar extends Component {
           </div>
         </div>
         <div className="mobile-menu">
-          <img src="img/svg/close-button.svg" className="close-button" />
+          <img src={imagePathHelper('svg/close-button.svg')} className="close-button" />
           <h1>
             <a href="/">
-              <img src="img/svg/teembr-logo.svg" />
+              <img src={imagePathHelper('svg/teembr-logo.svg')} />
             </a>
           </h1>
           <nav>

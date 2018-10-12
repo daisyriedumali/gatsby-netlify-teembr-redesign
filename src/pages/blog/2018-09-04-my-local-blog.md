@@ -5,8 +5,8 @@ date: '2018-09-04T20:54:43+08:00'
 description: Local Description
 tags:
   - local
-image: /img/chemex.jpg
-authorImage: /img/flavor_wheel.jpg
+image: /img/blog/chemex.jpg
+authorImage: /img/blog/flavor_wheel.jpg
 authorName: Errol B. Tiozon
 ---
 Main Body of Blog

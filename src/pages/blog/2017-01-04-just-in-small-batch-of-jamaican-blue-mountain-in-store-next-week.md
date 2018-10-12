@@ -10,8 +10,8 @@ tags:
   - green beans
   - flavor
   - tasting
-image: /img/chemex.jpg
-authorImage: /img/flavor_wheel.jpg
+image: /img/blog/chemex.jpg
+authorImage: /img/blog/flavor_wheel.jpg
 authorName: Errol B. Tiozon
 ---
 
