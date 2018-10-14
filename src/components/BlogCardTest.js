@@ -10,7 +10,7 @@ const BlogCardTest = ({ iconfill, data }) => {
                 <h2>{data.title}</h2>
                 <p>{data.snippet}</p>
                 <div className="author-info">
-                    <img src={data.headshot} />
+                    <img src={imagePathHelper(data.headshot)} />
                     <div>
                         <a href={data.link}>{data.author}</a>
                         <span>{data.date}</span>

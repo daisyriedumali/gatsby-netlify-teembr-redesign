@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ServicesSection from '../components/ServicesSection';
 import CaseStudies from '../components/CaseStudies';
 import Testimonials from '../components/Testimonials';
+import imagePathHelper from '../components/helper/imagePathHelper'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -18,7 +19,7 @@ export default class IndexPage extends React.Component {
               <p>Helping businesses with everything from branding, product design and social media strategies.</p>
               <a href="" className="btn">Contact Us</a>
             </div>
-            <img src="/img/jumbotron-img.png" />
+            <img src={imagePathHelper("main/jumbotron-img.png")} />
           </div>
         </section>
         <ServicesSection />

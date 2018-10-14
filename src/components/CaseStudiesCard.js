@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from '../components/Modal'
+import imagePathHelper from '../components/helper/imagePathHelper'
 
 class CaseStudiesCard extends Component {
     constructor(props) {
@@ -23,7 +24,7 @@ class CaseStudiesCard extends Component {
     render() {
         return (
             <div className="case-studies-card">
-	            <img src="/img/case-studies/crazy-rich-asians.jpg" />
+	            <img src={imagePathHelper("case-studies/crazy-rich-asians.jpg")} />
                 <h3>Crazy Rich Asians</h3>
                 <a href="" className="btn" onClick={this.showModal}>Read More</a>
                 
