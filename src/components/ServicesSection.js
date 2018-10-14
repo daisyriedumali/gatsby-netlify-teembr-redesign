@@ -1,5 +1,6 @@
-import React from 'react'
-import ServicesCard from '../components/ServicesCard'
+import React from 'react';
+import ServicesCard from '../components/ServicesCard';
+import imagePathHelper from '../components/helper/imagePathHelper'
 
 const data = [
     {
@@ -42,12 +43,12 @@ const ServicesSection = ({ iconfill }) => {
                     {getServicesCards()}
                 </div>
                 <div className="services-logos">
-                    <img key={1} src="/img/services-logos/shopify-experts.png"/>
-                    <img key={2} src="/img/services-logos/aws.png"/>
-                    <img key={3} src="/img/services-logos/paypal.png"/>
-                    <img key={4} src="/img/services-logos/mailchimp.png"/>
-                    <img key={5} src="/img/services-logos/envato.png"/>
-                    <img key={6} src="/img/services-logos/printful.png"/>
+                    <img key={1} src={imagePathHelper("services-logos/shopify-experts.png")}/>
+                    <img key={2} src={imagePathHelper("services-logos/aws.png")}/>
+                    <img key={3} src={imagePathHelper("services-logos/paypal.png")}/>
+                    <img key={4} src={imagePathHelper("services-logos/mailchimp.png")}/>
+                    <img key={5} src={imagePathHelper("services-logos/envato.png")}/>
+                    <img key={6} src={imagePathHelper("services-logos/printful.png")}/>
                 </div>
             </div>
         </div>

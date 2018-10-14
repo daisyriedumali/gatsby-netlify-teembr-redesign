@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ServicesSection from '../components/ServicesSection';
 import CaseStudies from '../components/CaseStudies';
 import Testimonials from '../components/Testimonials';
-import imagePathHelper from '../components/helper/imagePathHelper'
+import imagePathHelper from '../components/helper/imagePathHelper';
 
 export default class IndexPage extends React.Component {
   render() {
