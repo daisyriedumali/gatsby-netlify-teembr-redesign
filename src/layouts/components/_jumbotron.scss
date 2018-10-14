@@ -1,0 +1,77 @@
+.jumbotron {
+    background: $jumbotron-bg;
+    position: relative;
+
+    @include mappy-bp(desktop) {
+        height: calc(100vh - 115px);
+    }
+
+    > div {
+        @extend .contained;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        @include mappy-bp(tablet) {
+            flex-direction: row;
+        }
+    }
+
+    > div > div {
+        align-self: center;
+        justify-content: center;
+        width: 75%;
+        text-align: center;
+
+        @include mappy-bp(tablet) {
+            width: auto;
+            text-align: left;
+            padding-left: 2em;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.5em;
+            line-height: 1.25;
+
+            @include mappy-bp(desktop) {
+                font-size: 3em;
+            }
+        }
+        p {
+            margin: 1em 0;
+            font-size: 0.9em;
+
+            @include mappy-bp(desktop) {
+                font-size: 1.25em;
+            }
+        }
+        a {
+            width: 100px;
+            margin: 0 auto;
+
+            @include mappy-bp(tablet) {
+                width: 200px;
+                margin: 0;
+            }
+        }
+    }
+
+    img {
+        align-self: center;
+        position: relative;
+        width: 80%;
+        @include mappy-bp(tablet) {
+            width: 50%;
+        }
+        @include mappy-bp(desktop) {
+            height: auto;
+            width: auto;
+            max-width: 90%;
+            max-height: 100%;
+            align-self: flex-end;
+        }
+    }
+    
+}

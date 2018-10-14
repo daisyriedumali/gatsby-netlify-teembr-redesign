@@ -16,7 +16,7 @@
         text-align: center;
     }
     .testimonial-cards {
-        margin-bottom: 3em;
+        margin-bottom: 2em;
         padding: 0 2em 2em;
         overflow: auto;
         display: flex;
@@ -24,7 +24,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: 2em;
-            margin-bottom: 3em;
+            margin-bottom: 2em;
         }
     }
     .testimonial-card {

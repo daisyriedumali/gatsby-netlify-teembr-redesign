@@ -9,10 +9,10 @@
     }
 
     .case-studies-cards {
-        margin-bottom: 3em;
         padding: 0 2em 2em;
         overflow: auto;
         display: flex;
+
         @include mappy-bp(desktop) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -25,7 +25,7 @@
         overflow: hidden;
         border: 1px solid #EEEEEE;
         box-shadow: 0 5px 4px 0 rgba(225,225,225,0.50);
-        flex: 1 0 20em;
+        flex: 1 0 18em;
         margin-right: 2em;
         display: flex;
         flex-direction: column;
