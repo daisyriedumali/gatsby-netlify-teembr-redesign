@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import imagePathHelper from '../components/helper/imagePathHelper';
 
 class Modal extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class Modal extends Component {
         return (
             <div className="modal-outerspace">
                 <div className="modal-innerspace">
-                    <img src="/img/svg/close-button.svg" onClick={this.showModal} className="modal-close" />
+                    <img src={imagePathHelper("svg/close-button.svg")} onClick={this.showModal} className="modal-close" />
                     <h4>{this.props.title}</h4>
                     <p>{this.props.msg}</p>
                     <a href={this.props.cta} className="cta btn">{this.props.ctaMsg}</a>
