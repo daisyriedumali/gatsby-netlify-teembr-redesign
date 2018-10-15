@@ -37,6 +37,14 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
+            <div className="blog-author">
+              <h4>About the Author</h4>
+              <img className="author-headshot" src="https://pbs.twimg.com/media/Dop6D7sUcAAPF2r.jpg" />
+              <p>Simon is a coffee lover, former agency digital strategist, and Shopify Partner's Growth Marketing Manager. When he isn't hustling at the Shopify HQ, you can most likely find him dining at restaurants across the city or brushing up on the latest design trends</p>
+              <div className="social">
+                <a href="">Twitter</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
