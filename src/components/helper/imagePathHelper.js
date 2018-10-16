@@ -21,7 +21,6 @@ const imagePathHelper = (image_url) => {
  //    	}
  //    );
 
-	console.log(CLOUDINARY_URL + image_url);
     if(IS_CLOUDINARY) {
 		return CLOUDINARY_URL + image_url;
 	}

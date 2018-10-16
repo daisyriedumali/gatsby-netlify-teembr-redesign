@@ -26,7 +26,7 @@ class Navbar extends Component {
               </a>
             </h1>
             <nav>
-              <a href="/">Our Services</a>
+              <a href="#" className="nav-our-services">Our Services</a>
               <a href="">Case Studies</a>
               <a href="">Testimonials</a>
               <a href="/blog">Blog</a>
@@ -43,7 +43,7 @@ class Navbar extends Component {
             </a>
           </h1>
           <nav>
-            <a href="">Our Services</a>
+            <a href="#" className="nav-our-services">Our Services</a>
             <a href="">Case Studies</a>
             <a href="">Testimonials</a>
             <a href="/blog">Blog</a>
