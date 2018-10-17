@@ -9,4 +9,18 @@ image: /img/blog/chemex.jpg
 authorImage: /img/blog/products-grid3.jpg
 authorName: Elie B
 ---
-<img src="" class="hello" />
+<img src="https://media.mnn.com/assets/images/2018/03/coffee_foam.jpg.653x0_q80_crop-smart.jpg" class="img-left" />
+
+This image is left aligned.
+
+<img src="https://media.mnn.com/assets/images/2018/03/coffee_foam.jpg.653x0_q80_crop-smart.jpg" class="img-right" />
+
+Meanwhile this is right aligned.
+
+<img src="https://media.mnn.com/assets/images/2018/03/coffee_foam.jpg.653x0_q80_crop-smart.jpg" class="img-center" />
+
+Pretty centered, don't cha think?
+
+<img src="https://media.mnn.com/assets/images/2018/03/coffee_foam.jpg.653x0_q80_crop-smart.jpg" class="img-full" />
+
+Woah! Full view! Or at least within the container.
