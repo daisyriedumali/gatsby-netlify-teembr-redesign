@@ -22,11 +22,11 @@ const Footer = () => (
         <div className="social">
             <p>Follow us on:</p>
             <div className="icons">
-                <a href=""><i className="fa fa-facebook"></i></a>
-                <a href=""><i className="fa fa-instagram"></i></a>
-                <a href=""><i className="fa fa-pinterest"></i></a>
-                <a href=""><i className="fa fa-tumblr"></i></a>
-                <a href=""><i className="fa fa-linkedin"></i></a>
+                <a href="/"><i className="fa fa-facebook"></i></a>
+                <a href="/"><i className="fa fa-instagram"></i></a>
+                <a href="/"><i className="fa fa-pinterest"></i></a>
+                <a href="/"><i className="fa fa-tumblr"></i></a>
+                <a href="/"><i className="fa fa-linkedin"></i></a>
             </div>
         </div>
     </div>
