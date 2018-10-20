@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
 import imagePathHelper from '../components/helper/imagePathHelper'
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
+window.__forceSmoothScrollPolyfill__ = true;
 
 class Navbar extends Component {
   
+  constructor(props) {
+    super(props);
+
+    this.state = {
+        'our-services': '/#our-services'
+    };
+  }
+
   componentDidMount() {
     document.querySelector('.burger-menu').addEventListener('click', function(e) {
         let el = document.querySelector('.mobile-menu');
@@ -12,6 +23,20 @@ class Navbar extends Component {
         let el = document.querySelector('.mobile-menu');
         el.classList.remove('show');
     });
+
+    this.state.ourServices = document.querySelector('#our-services');
+  }
+
+  onClickNav(navClass) {
+    if(window.location.pathname == '/') {
+      let selectorRect = document.querySelector('#' + navClass).getBoundingClientRect();
+      window.scrollTo({ top: selectorRect.top + window.pageYOffset, left: 0, behavior: 'smooth' });
+    } else {
+      window.location.href = '/#' + navClass;
+    }
+    //WHEN BURGER MENU IS OPEN, ANY CLICK ON THE NAV BUTTONS SHOULD CLOSE THE BURGER MENU
+    let el = document.querySelector('.mobile-menu');
+    el.classList.remove('show');
   }
 
   render() {
@@ -26,9 +51,18 @@ class Navbar extends Component {
               </a>
             </h1>
             <nav>
-              <a href="#" className="nav-our-services">Our Services</a>
-              <a href="">Case Studies</a>
-              <a href="">Testimonials</a>
+              <a href="#" 
+                 onClick={this.onClickNav.bind(this, 'our-services')}>
+                Our Services
+              </a>
+              <a href="#"
+                 onClick={this.onClickNav.bind(this, 'case-studies')}>
+                Case Studies
+              </a>
+              <a href="#"
+                 onClick={this.onClickNav.bind(this, 'testimonials')}>
+                Testimonials
+              </a>
               <a href="/blog">Blog</a>
               <a href="/about-us">About Us</a>
               <a href="" className="btn">Contact Us</a>
@@ -43,9 +77,18 @@ class Navbar extends Component {
             </a>
           </h1>
           <nav>
-            <a href="#" className="nav-our-services">Our Services</a>
-            <a href="">Case Studies</a>
-            <a href="">Testimonials</a>
+            <a href="#" 
+               onClick={this.onClickNav.bind(this, 'our-services')}>
+              Our Services
+            </a>
+            <a href="#"
+               onClick={this.onClickNav.bind(this, 'case-studies')}>
+              Case Studies
+            </a>
+            <a href="#"
+               onClick={this.onClickNav.bind(this, 'testimonials')}>
+              Testimonials
+            </a>
             <a href="/blog">Blog</a>
             <a href="/about-us">About Us</a>
             <a href="" className="btn">Contact Us</a>

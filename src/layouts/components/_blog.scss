@@ -1,23 +1,27 @@
 .blog-nav {
-    background: $link-color;
+    background: $jumbotron-bg;
     > nav {
         @extend .contained;
         display: flex;
-        padding: 1em 2em;
+        padding: 0 2em;
 
         a {
-            color: $white;
+            color: $black;
             display: block;
             padding: 0.5em 1.5em;
-            border-right: 1px solid rgba($white,0.3);
+            //border-right: 1px solid rgba($white,0.3);
+            border-bottom: 2px solid transparent;
+            padding: 1em;
+            //margin-right: 0.5em;
 
-            &:first-child {
-                padding-left: 0;
-            }
             &:last-child {
-                padding-right: 0;
-                border-right: 0;
+                margin-right: 0;
             }
+        }
+        a.selected,
+        a:hover {
+            color: $link-color;
+            border-bottom: 2px solid $link-color;
         }
     }
 }
@@ -80,7 +84,11 @@
             margin-right: 5px;
         }
         h2 {
-            line-height: 1.35em;
+            line-height: 1.25em;
+        }
+        h2 + p { // snippet
+            height: 6em;
+            overflow: hidden;
         }
         .author-info {
             display: flex;
@@ -95,13 +103,13 @@
             > div {
                 display: flex;
                 flex-direction: column;
+                line-height: 1.25;
 
-                a { // author link
+                .author-name { // author link
                     font-weight: 800;
 
                 }
-                a + span { // DATE
-                    font-weight: 400;
+                .author-name + span { // DATE
                     font-size: 0.9em;
                 }
             }
@@ -237,6 +245,10 @@
         font-size: 1.75em;
         margin: 0 0 1em;
         text-align: center;
+
+        @include mappy-bp(tablet) {
+            display: none;
+        }
     }
 
     .author-info-wrapper {
@@ -246,6 +258,16 @@
 
         @include mappy-bp(tablet) { 
             flex-direction: row;
+            align-items: center;
+        }
+
+        h4 {
+            display: none;
+            text-align: left;
+    
+            @include mappy-bp(tablet) {
+                display: block;
+            }
         }
     }
 
@@ -263,6 +285,7 @@
     p {
         margin: 0 0 2em;
         text-align: center;
+        font-weight: 400;
 
         @include mappy-bp(tablet) {
             text-align: left;
@@ -273,25 +296,32 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
 
         @include mappy-bp(tablet) {
             justify-content: flex-start;
         }
 
+        > span {
+            font-weight: 400;
+            margin-right: 0.5em;
+        }
+
         a {
             background-color: black;
             color: white;
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 0.5em;
-            border-radius: 5px;
-            margin: 5px;
+            border-radius: 3px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            width: 1em;
+            height: 1em;
 
             &:last-child {
                 margin-right: 0;
-            }
-
-            i {
-                margin-right: 0.5em;
             }
 
             &.facebook { background-color: $facebook; }
@@ -304,3 +334,85 @@
     }
 }
 
+
+
+.tags-page {
+    padding: 2em 2em;
+
+    @include mappy-bp(tablet) {
+        padding: 2em 1em;
+    }
+
+    > div {
+        @extend .contained;
+    }
+
+    .section-title {
+        text-align: left;
+        margin: 0 0 2rem;
+    }
+
+    .taglist {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5em;
+
+        display: grid;
+        grid-gap: 1em;
+
+        @include mappy-bp(tablet) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        li a {
+            background: $link-color;
+            color: $white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5em 1em;
+            border-radius: 3px;
+            font-weight: bold;
+
+            span {
+                background: rgba($black,0.35);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 0.5em;
+                padding: 0.10em 0.5em;
+                border-radius: 5px;
+                font-weight: normal;
+                font-size: 0.9em;
+            }
+        }
+    }
+    .postlist {
+        list-style: disc;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5em;
+
+        margin: 1em 0 3em 1em;
+
+        li {
+            margin-bottom: 0.5em;
+        }
+        li a {
+            //background: $link-color;
+            color: $link-color;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            //padding: 0.5em 1em;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 1.25;
+        }
+    }
+    .browse-tags a {
+        font-size: 1.25em;
+    }
+}
