@@ -26,6 +26,7 @@
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",
     "sharp": "0.20",
+    "smoothscroll-polyfill": "^0.4.3",
     "uuid": "^3.2.1",
     "vips": "^1.0.0"
   },

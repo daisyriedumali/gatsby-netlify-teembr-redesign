@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 import TestimonialCard from '../components/TestimonialCard'
 
 const data = [
@@ -19,9 +19,9 @@ const data = [
     }
 ];
 
-const Testimonials = ({ iconfill }) => {
+class Testimonials extends Component {
   
-  const getTestimonialCards = () => {
+  getTestimonialCards() {
     let cards = data.map(function(datum, index){
         return <TestimonialCard data={datum} key={index}/>;
     });
@@ -29,17 +29,27 @@ const Testimonials = ({ iconfill }) => {
     return cards;
   }
 
-  return (
-    <div className="testimonials">
+  componentDidMount() {
+    let hash = window.location.hash.substring(1);
+    if(hash) {
+      let selectorRect = document.querySelector('#' + hash).getBoundingClientRect();
+      window.scrollTo({ top: selectorRect.top + window.pageYOffset, left: 0, behavior: 'smooth' });
+    }
+  }
+
+  render() {
+    return (
+      <div className="testimonials" id="testimonials">
         <div>
-            <h3 className="section-title">Testimonials</h3>
-            <div className="testimonial-cards">
-                {getTestimonialCards()}
-            </div>
-            <a href="/">See All Testimonials</a>
+          <h3 className="section-title">Testimonials</h3>
+          <div className="testimonial-cards">
+              {this.getTestimonialCards()}
+          </div>
+          <a href="https://www.facebook.com/teembrdesigns/reviews" target="_blank" rel="nofollow noopener">See All Testimonials</a>
         </div>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default Testimonials
