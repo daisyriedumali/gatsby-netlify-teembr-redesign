@@ -285,6 +285,7 @@
     p {
         margin: 0 0 2em;
         text-align: center;
+        font-weight: 400;
 
         @include mappy-bp(tablet) {
             text-align: left;
@@ -302,7 +303,7 @@
         }
 
         > span {
-            font-weight: bold;
+            font-weight: 400;
             margin-right: 0.5em;
         }
 
