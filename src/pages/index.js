@@ -6,6 +6,7 @@ import Testimonials from '../components/Testimonials';
 import imagePathHelper from '../components/helper/imagePathHelper';
 
 export default class IndexPage extends React.Component {
+  
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark

@@ -27,8 +27,8 @@ class Navbar extends Component {
             </h1>
             <nav>
               <a href="#" className="nav-our-services">Our Services</a>
-              <a href="">Case Studies</a>
-              <a href="">Testimonials</a>
+              <a href="#">Case Studies</a>
+              <a href="#">Testimonials</a>
               <a href="/blog">Blog</a>
               <a href="/about-us">About Us</a>
               <a href="" className="btn">Contact Us</a>
