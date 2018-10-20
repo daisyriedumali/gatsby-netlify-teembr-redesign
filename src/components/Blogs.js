@@ -66,7 +66,7 @@ const Blogs = ({ iconfill }) => {
         <div className="blog">
             <div className="blog-nav">
                 <nav>
-                    <a href="/">Design Resources</a>
+                    <a href="/" className="selected">Design Resources</a>
                     <a href="/">Articles</a>
                 </nav>
             </div>
