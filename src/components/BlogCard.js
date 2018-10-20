@@ -12,7 +12,7 @@ const BlogCard = ({ iconfill, data }) => {
                 <div className="author-info">
                     <img src={imagePathHelper(data.headshot)} />
                     <div>
-                        {data.author}
+                        <span className="author-name">{data.author}</span>
                         <span>{data.date}</span>
                     </div>
                 </div>
