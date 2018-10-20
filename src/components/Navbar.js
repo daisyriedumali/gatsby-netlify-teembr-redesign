@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import imagePathHelper from '../components/helper/imagePathHelper'
 import smoothscroll from 'smoothscroll-polyfill';
-smoothscroll.polyfill();
-window.__forceSmoothScrollPolyfill__ = true;
+
+if (typeof window !== `undefined`) {
+  smoothscroll.polyfill();
+  window.__forceSmoothScrollPolyfill__ = true;
+}
 
 class Navbar extends Component {
   
