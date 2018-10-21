@@ -21,10 +21,17 @@ class Navbar extends Component {
     document.querySelector('.burger-menu').addEventListener('click', function(e) {
         let el = document.querySelector('.mobile-menu');
         el.classList.add('show');
+
+        let body = document.querySelector('body');
+        body.classList.add('freeze-body');
     });
+
     document.querySelector('.close-button').addEventListener('click', function(e) {
         let el = document.querySelector('.mobile-menu');
         el.classList.remove('show');
+
+        let body = document.querySelector('body');
+        body.classList.remove('freeze-body');
     });
 
     this.state.ourServices = document.querySelector('#our-services');
@@ -37,9 +44,15 @@ class Navbar extends Component {
     } else {
       window.location.href = '/#' + navClass;
     }
-    //WHEN BURGER MENU IS OPEN, ANY CLICK ON THE NAV BUTTONS SHOULD CLOSE THE BURGER MENU
+
+    //WHEN BURGER MENU IS OPEN,
+    //ANY CLICK ON THE NAV BUTTONS SHOULD CLOSE THE BURGER MENU
+    //AND REMOVE THE FREEZE-BODY CLASS IN BODY
     let el = document.querySelector('.mobile-menu');
     el.classList.remove('show');
+
+    let body = document.querySelector('body');
+    body.classList.remove('freeze-body');
   }
 
   render() {

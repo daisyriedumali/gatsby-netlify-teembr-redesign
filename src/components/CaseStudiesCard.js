@@ -16,9 +16,21 @@ class CaseStudiesCard extends Component {
     showModal(e) {
         e.preventDefault();
 
+        this.freezeBodyCondition();
+
         this.setState({
             isShowModal : !this.state.isShowModal
         });
+    }
+
+    freezeBodyCondition() {
+        if(!this.state.isShowModal) {
+            let body = document.querySelector('body');
+            body.classList.add('freeze-body');
+        } else {
+            let body = document.querySelector('body');
+            body.classList.remove('freeze-body');
+        }
     }
 
     render() {
