@@ -12,6 +12,10 @@
         padding: 0 2em 2em;
         overflow: auto;
         display: flex;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         @include mappy-bp(desktop) {
             display: grid;
