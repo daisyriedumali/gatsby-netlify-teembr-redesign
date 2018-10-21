@@ -4,6 +4,10 @@ body {
     font-weight: 500;
 }
 
+.body-freeze {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: $link-color;
