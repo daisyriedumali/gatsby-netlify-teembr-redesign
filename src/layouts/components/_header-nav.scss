@@ -57,6 +57,13 @@
         color: $white;
     }
 }
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .mobile-menu {
 	-webkit-overflow-scrolling: touch;
     background-color: $white;
