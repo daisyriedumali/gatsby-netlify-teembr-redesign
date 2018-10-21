@@ -21,7 +21,7 @@ class Modal extends Component {
         // can click it and the modal should be automatically closed
         // close event on the modal-outerspace is not yet implemented
         return (
-            <div className="modal-outerspace">
+            <div className="modal-outerspace" onClick={this.showModal}>
                 <div className="modal-innerspace">
                     <img src={imagePathHelper("svg/close-button.svg")} onClick={this.showModal} className="modal-close" />
                     <h4>{this.props.title}</h4>
