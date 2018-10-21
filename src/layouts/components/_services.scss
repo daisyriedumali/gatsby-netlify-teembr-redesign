@@ -50,11 +50,15 @@
         overflow: hidden;
         border: 1px solid #EEEEEE;
         box-shadow: 0 5px 4px 0 rgba(225,225,225,0.50);
-        flex: 1 0 18em;
+        flex: 1 0 14em;
         margin-right: 2em;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @include mappy-bp(mobile) {
+            flex: 1 0 18em;
+        }
 
         @include mappy-bp(tablet) {
            margin-right: 0; 
