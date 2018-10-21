@@ -22,16 +22,16 @@ const Footer = () => (
         <div className="social">
             <p>Follow us on:</p>
             <div className="icons">
-                <a href="/"><i className="fa fa-facebook"></i></a>
-                <a href="/"><i className="fa fa-instagram"></i></a>
-                <a href="/"><i className="fa fa-pinterest"></i></a>
-                <a href="/"><i className="fa fa-tumblr"></i></a>
-                <a href="/"><i className="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/teembrdesigns/" target="_blank" rel="nofollow noopener"><i className="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/teembrdesigns" target="_blank" rel="nofollow noopener"><i className="fa fa-instagram"></i></a>
+                <a href="https://www.pinterest.ph/teembr/" target="_blank" rel="nofollow noopener"><i className="fa fa-pinterest"></i></a>
+                <a href="https://teembr-works.tumblr.com/" target="_blank" rel="nofollow noopener"><i className="fa fa-tumblr"></i></a>
+                <a href="/" target="_blank" rel="nofollow noopener"><i className="fa fa-linkedin"></i></a>
             </div>
         </div>
     </div>
     <div className="copyright">
-        Teembr &copy; 2016. All Rights Reserved.
+        Teembr &copy; 2018. All Rights Reserved.
     </div>
   </div>
 )

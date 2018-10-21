@@ -4,6 +4,7 @@ import ServicesSection from '../components/ServicesSection';
 import CaseStudies from '../components/CaseStudies';
 import Testimonials from '../components/Testimonials';
 import imagePathHelper from '../components/helper/imagePathHelper';
+import Helmet from 'react-helmet';
 
 export default class IndexPage extends React.Component {
   
@@ -13,6 +14,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <div>
+        <Helmet title="Teembr" />
         <section className="jumbotron">
           <div>
             <div>

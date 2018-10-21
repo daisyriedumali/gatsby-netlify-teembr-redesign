@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import BlogCard from '../components/BlogCard'
+import Helmet from 'react-helmet';
 
 export default class Blog extends React.Component {
   render() {
@@ -10,6 +11,7 @@ export default class Blog extends React.Component {
 
     return (
       <section>
+        <Helmet title="Blogs | Teembr" />
         <div className="blog">
             <div className="blog-nav">
                 <nav>

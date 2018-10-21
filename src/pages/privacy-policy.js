@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet';
 
 export default class PrivacyPolicyPage extends React.Component {
   render() {
     return (
       <section className="privacy">
+        <Helmet title="Privacy | Teembr" />
         <div>
           <h2>Teembr Privacy Policy</h2>
 
