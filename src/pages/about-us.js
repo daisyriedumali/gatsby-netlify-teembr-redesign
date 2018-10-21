@@ -3,11 +3,13 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import TeamMemberCard from '../components/TeamMemberCard';
 import imagePathHelper from '../components/helper/imagePathHelper';
+import Helmet from 'react-helmet';
 
 export default class AboutUsPage extends React.Component {
   render() {
     return (
       <div>
+        <Helmet title="About Us | Teembr" />
         <section className="team-info">
           <img src={imagePathHelper("about-us/team2.jpg")} />
           <div>

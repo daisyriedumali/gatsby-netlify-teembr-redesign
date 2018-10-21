@@ -10,19 +10,27 @@ class Modal extends Component {
         }
 
         this.showModal = this.showModal.bind(this);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
+    }
+
+    setWrapperRef(node) {
+        this.wrapperRef = node;
     }
 
     showModal(e) {
         this.props.showModal(e);
     }
 
+    handleClickOutside(e) {
+        if (!this.node.contains(e.target)) {
+          this.props.showModal(e);
+        }
+    }
+
     render() {
-        // modal-outerspace should be the gray area of the modal where users
-        // can click it and the modal should be automatically closed
-        // close event on the modal-outerspace is not yet implemented
         return (
-            <div className="modal-outerspace" onClick={this.showModal}>
-                <div className="modal-innerspace">
+            <div className="modal-outerspace" onClick={this.handleClickOutside} >
+                <div className="modal-innerspace" ref={node => this.node = node}>
                     <img src={imagePathHelper("svg/close-button.svg")} onClick={this.showModal} className="modal-close" />
                     <h4>{this.props.title}</h4>
                     <p>{this.props.msg}</p>
