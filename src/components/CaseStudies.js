@@ -4,11 +4,15 @@ import CaseStudiesCard from '../components/CaseStudiesCard'
 class CaseStudies extends Component {
     
     componentDidMount() {
-        let hash = window.location.hash.substring(1);
-        if(hash) {
-            let selectorRect = document.querySelector('#' + hash).getBoundingClientRect();
-            window.scrollTo({ top: selectorRect.top + window.pageYOffset, left: 0, behavior: 'smooth' });
-        }
+        // let hash = window.location.hash.substring(1);
+        // if(hash) {
+        //     let selectorRect = document.querySelector('#' + hash).getBoundingClientRect();
+        //     let topNav = document.querySelector('.top-nav');
+        //     let scrollToTop = (selectorRect.top + window.pageYOffset + 5) - topNav.clientHeight;
+        //     scrollToTop = (!topNav.classList.contains('sticky-nav')) ? scrollToTop - topNav.clientHeight : scrollToTop;
+
+        //     window.scrollTo({ top: scrollToTop + window.pageYOffset, left: 0, behavior: 'smooth' });
+        // }
     }
     
     render() {

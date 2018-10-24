@@ -15,9 +15,13 @@ class Navbar extends Component {
     this.state = {
         'our-services': '/#our-services'
     };
+
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+
     document.querySelector('.burger-menu').addEventListener('click', function(e) {
         let el = document.querySelector('.mobile-menu');
         el.classList.add('show');
@@ -37,10 +41,20 @@ class Navbar extends Component {
     this.state.ourServices = document.querySelector('#our-services');
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
   onClickNav(navClass) {
     if(window.location.pathname == '/') {
       let selectorRect = document.querySelector('#' + navClass).getBoundingClientRect();
-      window.scrollTo({ top: selectorRect.top + window.pageYOffset, left: 0, behavior: 'smooth' });
+      let topNav = document.querySelector('.top-nav');
+      let scrollToTop = (selectorRect.top + window.pageYOffset + 5) - topNav.clientHeight;
+      scrollToTop = (!topNav.classList.contains('sticky-nav')) ? scrollToTop - topNav.clientHeight : scrollToTop;
+      
+      console.log(scrollToTop);
+      window.scrollTo({ top: scrollToTop, left: 0, behavior: 'smooth' });
+      console.log('should scroll: '+ window.pageYOffset);
     } else {
       window.location.href = '/#' + navClass;
     }
@@ -55,10 +69,20 @@ class Navbar extends Component {
     body.classList.remove('freeze-body');
   }
 
+  handleScroll(e) {
+    let topNav = document.querySelector('.top-nav');
+    let jumbotron = document.querySelector('.jumbotron');
+    if(window.pageYOffset > jumbotron.clientHeight - topNav.clientHeight) {
+      topNav.classList.add('sticky-nav');
+    } else {
+      topNav.classList.remove('sticky-nav');
+    }
+  }
+
   render() {
     return (
       <div>
-        <div className="top-nav">
+        <div className="top-nav" style={{'zIndex':100}}>
           <div>
             <img src={imagePathHelper('svg/burger-menu.svg')} className="burger-menu" />
             <h1>

@@ -6,6 +6,24 @@ import Testimonials from '../components/Testimonials';
 import imagePathHelper from '../components/helper/imagePathHelper';
 import Helmet from 'react-helmet';
 
+document.addEventListener('readystatechange', function docStateChange(e) {
+    if(e.target.readystate === 'complete') {
+        let hash = window.location.hash.substring(1);
+        console.log('====hasha');
+        if(hash) {
+            console.log('====hash' + hash);
+            let selectorRect = document.querySelector('#' + hash).getBoundingClientRect();
+            let topNav = document.querySelector('.top-nav');
+            let scrollToTop = (selectorRect.top + window.pageYOffset + 5) - topNav.clientHeight;
+            scrollToTop = (!topNav.classList.contains('sticky-nav')) ? scrollToTop - topNav.clientHeight : scrollToTop;
+
+            window.scrollTo({ top: scrollToTop + window.pageYOffset, left: 0, behavior: 'smooth' });
+        }
+        e.target.removeEventListener('readystatechange', docStateChange);
+        done();
+    }
+});
+
 export default class IndexPage extends React.Component {
   
   render() {
