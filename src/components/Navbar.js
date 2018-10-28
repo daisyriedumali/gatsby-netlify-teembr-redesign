@@ -20,6 +20,24 @@ class Navbar extends Component {
   }
 
   componentDidMount() {
+    document.addEventListener('readystatechange', function docStateChange(e) {
+      if(e.target.readystate === 'complete') {
+          let hash = window.location.hash.substring(1);
+          console.log('====hasha');
+          if(hash) {
+              console.log('====hash' + hash);
+              let selectorRect = document.querySelector('#' + hash).getBoundingClientRect();
+              let topNav = document.querySelector('.top-nav');
+              let scrollToTop = (selectorRect.top + window.pageYOffset + 5) - topNav.clientHeight;
+              scrollToTop = (!topNav.classList.contains('sticky-nav')) ? scrollToTop - topNav.clientHeight : scrollToTop;
+
+              window.scrollTo({ top: scrollToTop + window.pageYOffset, left: 0, behavior: 'smooth' });
+          }
+          e.target.removeEventListener('readystatechange', docStateChange);
+          done();
+      }
+  });
+      
     window.addEventListener('scroll', this.handleScroll);
 
     document.querySelector('.burger-menu').addEventListener('click', function(e) {
