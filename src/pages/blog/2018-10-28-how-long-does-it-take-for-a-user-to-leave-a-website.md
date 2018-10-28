@@ -22,23 +22,12 @@ authorName: Daisyrie Dumali
 
 This question has been asked over a thousand times already, but the answer will always be the same — not long. In this fast-paced world, people come and go. If they don’t find what they are looking for on your website, they will not hesitate to close their tab and search for another. The average page visit lasts a little less than a minute. Although user behaviour varies and this is not an accurate variable for your website’s bounce rate, it is very important to consider the few seconds you have per user visits.
 
-
-
 According to a research by Chao Liu and colleagues from Microsoft Research, there is a mathematical understanding of users’ page-leaving behaviour. It follows a Weibull distribution which used to analyze time-to-failure for components, which in this case the time a user spent on a page.
-
-
 
 There are 2 kinds of Weibull distributions:
 
-
-
 1. Positive aging: This means that the longer a component has been in service, the more likely it is to fail. It supports the intuitive sense that if something has been used for a long time, it will be approaching its breaking point.
-
-
-
 2. Negative aging: This means that the longer a component has been in service, the less likely it is to fail. Anything that has been in service for a long time, it is more particularly robust and will continue to survive even longer.
-
-
 
 What’s more interesting about the research was, 99% of the web pages have a negative aging effect. This does not only shows that web pages are highly valued for their quality but also tells us the users are less naive than before. Once they decided the value of the page, they may stay and browse your website for more information or ruthlessly hit close-tab almost instantly.
 
