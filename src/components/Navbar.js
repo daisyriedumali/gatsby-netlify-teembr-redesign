@@ -90,7 +90,7 @@ class Navbar extends Component {
   handleScroll(e) {
     let topNav = document.querySelector('.top-nav');
     let jumbotron = document.querySelector('.jumbotron');
-    if(window.pageYOffset > jumbotron.clientHeight - topNav.clientHeight) {
+    if(jumbotron!=undefined && (window.pageYOffset > jumbotron.clientHeight - topNav.clientHeight)) {
       topNav.classList.add('sticky-nav');
     } else {
       topNav.classList.remove('sticky-nav');
