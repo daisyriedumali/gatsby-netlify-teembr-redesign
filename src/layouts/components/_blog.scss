@@ -146,18 +146,35 @@
     }
 }
 
+.center-blog-element {
+    
+    @include mappy-bp(tablet) {
+        max-width: 75rem;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
 .blog-post {
-    @extend .contained;
-    padding: 2em;
+    //@extend .contained;
+    padding: 1.5em;
+
+    @include mappy-bp(tablet) {
+        padding: 0;
+    }
 
     h1.title {
         font-size: 2.5em;
+        margin: 1em 0;
+        @extend .center-blog-element;
     }
-
     p.description {
         font-size: 1.5em;
         line-height: 1.25em;
-        margin: 1em 0 2em;
+        margin: 1em auto 2em;
+        @extend .center-blog-element;
     }
 
     .post-content {
@@ -168,32 +185,40 @@
         p {
             font-size: 1.2rem;
             line-height: 1.75;
-            margin: 2em 0;
+            margin: 2em auto;
+            @extend .center-blog-element;
         }
 
         ul {
             margin: 2em 0;
+            @extend .center-blog-element;
         }
     }
 
-    img {
-        max-width: 100%;
-    }
-
     .img-left {
-        float: left;
-        margin: 0 2em 1em 0;
+        @include mappy-bp(tablet) {
+            float: left;
+            margin: 0 2em 1em 0;
+        }
     }
 
     .img-right {
-        float: right;
-        margin: 0 0 1em 2em;
+        @include mappy-bp(tablet) {
+            float: right;
+            margin: 0 0 1em 2em;
+        }
     }
 
     .img-center {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        clear: both;
+        text-align: center;
+    }
+
+    .img-contained {
+        @extend .center-blog-element;
     }
 
     .img-full {
@@ -207,6 +232,7 @@
     .taglist {
         display: flex;
         align-items: center;
+        @extend .center-blog-element;
 
         ul {
             display: flex;
@@ -230,6 +256,34 @@
             }
         }
     }
+}
+
+blockquote {
+    @extend .center-blog-element;
+    padding: 0 2em;
+    font-size: 1.25em;
+    font-style: italic;
+
+    &:before {
+        content: "...";
+        display: block;
+        text-align: center;
+        padding: 0 0 1em;
+        letter-spacing: 0.75em;
+        font-weight: bold;
+    }
+    &:after {
+        content: "...";
+        display: block;
+        text-align: center;
+        padding: 1em 0 0;
+        letter-spacing: 0.75em;
+        font-weight: bold;
+    }
+}
+
+.blog-author-wrapper {
+    @extend .center-blog-element;
 }
 
 .blog-author {

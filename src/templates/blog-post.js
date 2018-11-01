@@ -40,21 +40,23 @@ export const BlogPostTemplate = ({
                   </ul>
                 </div>
               ) : null}
-              <div className="blog-author">
-                <h4 className="mobile-only">About the Author</h4>
-                <div className="author-info-wrapper">
-                  <img className="author-headshot" src="https://pbs.twimg.com/media/Dop6D7sUcAAPF2r.jpg" />
-                  <div className="author-info">
-                    <h4 className="desktop-only">About the Author</h4>
-                    <p>Kim Seokjin is a coffee lover, former agency digital strategist, and Shopify Partner's Growth Marketing Manager. When he isn't hustling at the Shopify HQ, you can most likely find him dining at restaurants across the city or brushing up on the latest design trends</p>
-                    <div className="social">
-                      <span>Follow on:</span>
-                      <a href="" className="facebook"><i className="fa fa-facebook" /></a>
-                      <a href="" className="instagram"><i className="fa fa-instagram" /></a>
-                      <a href="" className="medium"><i className="fa fa-medium" /></a>
-                      <a href="" className="linkedin"><i className="fa fa-linkedin" /></a>
-                      <a href="" className="google-plus"><i className="fa fa-google-plus" /></a>
-                      <a href="" className="twitter"><i className="fa fa-twitter" /></a>
+              <div className="blog-author-wrapper">
+                <div className="blog-author">
+                  <h4 className="mobile-only">About the Author</h4>
+                  <div className="author-info-wrapper">
+                    <img className="author-headshot" src="https://pbs.twimg.com/media/Dop6D7sUcAAPF2r.jpg" />
+                    <div className="author-info">
+                      <h4 className="desktop-only">About the Author</h4>
+                      <p>Kim Seokjin is a coffee lover, former agency digital strategist, and Shopify Partner's Growth Marketing Manager. When he isn't hustling at the Shopify HQ, you can most likely find him dining at restaurants across the city or brushing up on the latest design trends</p>
+                      <div className="social">
+                        <span>Follow on:</span>
+                        <a href="" className="facebook"><i className="fa fa-facebook" /></a>
+                        <a href="" className="instagram"><i className="fa fa-instagram" /></a>
+                        <a href="" className="medium"><i className="fa fa-medium" /></a>
+                        <a href="" className="linkedin"><i className="fa fa-linkedin" /></a>
+                        <a href="" className="google-plus"><i className="fa fa-google-plus" /></a>
+                        <a href="" className="twitter"><i className="fa fa-twitter" /></a>
+                      </div>
                     </div>
                   </div>
                 </div>
