@@ -182,16 +182,57 @@
         font-weight: 400;
         line-height: 1.75;
 
+        > * {
+            margin: 2em 0;
+            @extend .center-blog-element;
+        }
+
+        img {
+            display: block;
+        }
+
         p {
             font-size: 1.2rem;
             line-height: 1.75;
             margin: 2em auto;
-            @extend .center-blog-element;
+
+            img {
+                max-width: 100%;
+            }
         }
 
-        ul {
-            margin: 2em 0;
-            @extend .center-blog-element;
+        ul, ol {
+            padding-left: 4em;
+        }
+
+        blockquote {
+            padding: 0 2em;
+            font-size: 1.25em;
+            font-style: italic;
+            max-width: calc(75rem - 10em);
+        
+            * {
+                font-size: inherit;
+                padding: 0;
+                margin: 0;
+            }
+        
+            &:before {
+                content: "...";
+                display: block;
+                text-align: center;
+                padding: 0 0 1em;
+                letter-spacing: 0.75em;
+                font-weight: bold;
+            }
+            &:after {
+                content: "...";
+                display: block;
+                text-align: center;
+                padding: 1em 0 0;
+                letter-spacing: 0.75em;
+                font-weight: bold;
+            }
         }
     }
 
@@ -223,6 +264,8 @@
 
     .img-full {
         width: 100%;
+        max-width: 100%;
+        padding: 0;
     }
 
     .clear {
@@ -258,29 +301,7 @@
     }
 }
 
-blockquote {
-    @extend .center-blog-element;
-    padding: 0 2em;
-    font-size: 1.25em;
-    font-style: italic;
 
-    &:before {
-        content: "...";
-        display: block;
-        text-align: center;
-        padding: 0 0 1em;
-        letter-spacing: 0.75em;
-        font-weight: bold;
-    }
-    &:after {
-        content: "...";
-        display: block;
-        text-align: center;
-        padding: 1em 0 0;
-        letter-spacing: 0.75em;
-        font-weight: bold;
-    }
-}
 
 .blog-author-wrapper {
     @extend .center-blog-element;
