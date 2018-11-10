@@ -172,6 +172,7 @@
     }
     p.description {
         font-size: 1.5em;
+        font-weight: 400;
         line-height: 1.25em;
         margin: 1em auto 2em;
         @extend .center-blog-element;
@@ -217,7 +218,7 @@
                 margin: 0;
             }
         
-            &:before {
+            /*&:before {
                 content: "...";
                 display: block;
                 text-align: center;
@@ -232,8 +233,17 @@
                 padding: 1em 0 0;
                 letter-spacing: 0.75em;
                 font-weight: bold;
-            }
+            }*/
         }
+    }
+
+    .custom-hr:before {
+        content: "...";
+        display: block;
+        text-align: center;
+        padding: 1em 0 0;
+        letter-spacing: 0.75em;
+        font-weight: bold;
     }
 
     .img-left {
