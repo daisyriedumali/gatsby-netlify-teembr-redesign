@@ -16,7 +16,7 @@ tags:
   - Website Optimization
 image: /img/blog/1_nih-gu8xei4jpbhrwkcqqq.jpeg
 authorImage: /img/blog/me1.jpg
-authorName: Daisyrie Dumali
+authorName: Daisy Dumali
 ---
 <img src="https://res.cloudinary.com/teembr/image/upload/v1540732745/img/blog/1_nIH-gU8xeI4JpbhrWKCqQQ.jpg" class="img-full" />
 
