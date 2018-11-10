@@ -20,8 +20,6 @@ authorName: Daisy Dumali
 ---
 **<img src="https://res.cloudinary.com/teembr/image/upload/v1540732745/img/blog/1_nIH-gU8xeI4JpbhrWKCqQQ.jpg" class="img-full" />**
 
-This question has been asked over a thousand times already, but the answer will always be the same — not long. In this fast-paced world, people come and go. If they don’t find what they are looking for on your website, they will not hesitate to close their tab and search for another. The average page visit lasts a little less than a minute. Although user behaviour varies and this is not an accurate variable for your website’s bounce rate, it is very important to consider the few seconds you have per user visits.
-
 According to a research by Chao Liu and colleagues from Microsoft Research, there is a mathematical understanding of users’ page-leaving behaviour. It follows a Weibull distribution which used to analyze time-to-failure for components, which in this case the time a user spent on a page.
 
 There are 2 kinds of Weibull distributions:

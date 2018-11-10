@@ -11,11 +11,11 @@ export default class AboutUsPage extends React.Component {
       <div>
         <Helmet title="About Us | Teembr" />
         <section className="team-info">
-          <img src={imagePathHelper("about-us/team2.jpg")} />
+          <img src={imagePathHelper("about-us/team.jpg")} />
           <div>
             <h1>About the Team</h1>
             <p>We are a group of passionate individuals who aims to help businesses create products and brands through creative design.</p>
-            <p><strong>Mission:</strong>
+            <p><strong>Mission: </strong>
             <strong>Get more attention and make things simple.</strong></p>
 
             <p>We are living in a fast-paced world where getting attention becomes scarce. 
@@ -28,17 +28,19 @@ export default class AboutUsPage extends React.Component {
             <p>Thus, it is our goal to be able to help businesses create products and brands through creative design.</p>
           </div>
         </section>
-        <section className="team-members">
-          <div className="team-member-cards">
-            <TeamMemberCard />
-            <TeamMemberCard />
-            <TeamMemberCard />
-            <TeamMemberCard />
-            <TeamMemberCard />
-            <TeamMemberCard />
-          </div>
-        </section>
+        
       </div>
     )
   }
 }
+
+// <section className="team-members">
+//   <div className="team-member-cards">
+//     <TeamMemberCard />
+//     <TeamMemberCard />
+//     <TeamMemberCard />
+//     <TeamMemberCard />
+//     <TeamMemberCard />
+//     <TeamMemberCard />
+//   </div>
+// </section>

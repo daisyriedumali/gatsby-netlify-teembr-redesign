@@ -14,7 +14,7 @@ export default class Blog extends React.Component {
       <section>
         <Helmet title="Blogs | Teembr" />
         <div className="blog">
-            <BlogNav />
+            
             <div className="blog-cards-wrapper">
                 <div className="blog-cards">
                     {posts
@@ -23,7 +23,7 @@ export default class Blog extends React.Component {
                           data={{
                             image    : post.frontmatter.image,
                             title    : post.frontmatter.title,
-                            snippet  : post.excerpt,
+                            snippet  : post.frontmatter.description.substr(0, 400),
                             headshot : post.frontmatter.authorImage,
                             author   : post.frontmatter.authorName,
                             link     : post.fields.slug,
@@ -66,6 +66,7 @@ export const pageQuery = graphql`
             image
             authorImage
             authorName
+            description
           }
         }
       }
