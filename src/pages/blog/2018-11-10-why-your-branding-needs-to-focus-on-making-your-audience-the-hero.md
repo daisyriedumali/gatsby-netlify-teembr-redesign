@@ -14,7 +14,7 @@ image: /img/blog/1_f5my4h7bqbekypzro1xy_w.jpeg
 authorImage: /img/blog/43122706_10210494983965490_1320791838969298944_n.jpg
 authorName: Errol Tiozon
 ---
-<img src="https://res.cloudinary.com/teembr/image/upload/v1541860168/img/blog/1_f5mY4H7BQBEKYpZro1xY_w.jpg" class="img-contained" />
+<img src="https://res.cloudinary.com/teembr/image/upload/v1541860168/img/blog/1_f5mY4H7BQBEKYpZro1xY_w.jpg" class="img-full" />
 
 Let me share you an observation that happens on a daily basis.
 
@@ -51,8 +51,6 @@ Again — this is definitely a different dynamic from your simple retargetin
 Copy is just one way to develop a unique selling proposition in a crowded marketplace.
 
 In the coming articles, me and my team will share some case studies about the tricks companies use to manipulate consumer’s minds and persuade them from buying.
-
-
 
 **Your Turn:**
 
