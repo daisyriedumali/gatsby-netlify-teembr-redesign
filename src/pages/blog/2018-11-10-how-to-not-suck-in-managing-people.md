@@ -16,7 +16,7 @@ image: /img/blog/1_oe5q5vpmon-it-1nnnqbvg.jpeg
 authorImage: /img/blog/me1.jpg
 authorName: Daisy Dumali
 ---
-![Managing People](/img/blog/1_oe5q5vpmon-it-1nnnqbvg.jpeg)
+<img src="https://res.cloudinary.com/teembr/image/upload/v1540732745/img/blog/1_oe5q5vpmon-it-1nnnqbvg.jpeg" class="img-full" />
 
 Having no degree that is anything close to leadership is honestly not a hindrance to becoming good at managing people. It definitely required some skills in order to be effective, but did you know that as early as a child, we were already thought of the basics of becoming a leader.
 
