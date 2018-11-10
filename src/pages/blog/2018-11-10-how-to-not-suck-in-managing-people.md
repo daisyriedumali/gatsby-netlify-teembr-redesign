@@ -42,13 +42,12 @@ You might ask, why do they need mentorship? It’s because every member in your 
 
 I have an experience working as a teacher in an academe and it helped me boost my confidence with people and how I speak to them. Being able to share my knowledge with the team not only help them improve and optimize their work, it also helped us bond together.
 
+<p class="custom-hr"></p>
 
+Let me leave you with the quote I really admire from John Quincy Adams:
 
-> Let me leave you with the quote I really admire from John Quincy Adams:
->
->
 > If your actions inspire others to dream more, learn more, do more and become more, YOU ARE A LEADER.
 
-
+<p class="custom-hr"></p>
 
 You might want to check out another article I wrote on assessing yourself about how poor of a leader are you. Also, if you have comments and suggestions, don’t hesitate to share your thoughts below! I will appreciate to hear about it.
