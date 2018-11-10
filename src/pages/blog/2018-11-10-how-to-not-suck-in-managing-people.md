@@ -46,13 +46,6 @@ I have an experience working as a teacher in an academe and it helped me boost m
 
 > Let me leave you with the quote I really admire from John Quincy Adams:
 >
-> \
->
->
->
->
-> \
->
 >
 > If your actions inspire others to dream more, learn more, do more and become more, YOU ARE A LEADER.
 
