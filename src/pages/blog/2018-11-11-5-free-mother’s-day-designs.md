@@ -40,4 +40,4 @@ So to cut things short, I and my team created designs specifically for Mother’
 
 <p class="custom-hr"></p>
 
-We’ll send the download link via Messenger: [Send to Messenger](https://m.me/teembrdesigns?ref=w1806272)
+<p>We’ll send the download link via Messenger: <a class="btn" href="https://m.me/teembrdesigns?ref= w1806272" style="width: 250px">Send to Messenger</a></p>
