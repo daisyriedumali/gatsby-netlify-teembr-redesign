@@ -40,6 +40,4 @@ Here’s some snippet as to what you’ll be able to download.
 
 <p class="custom-hr"></p>
 
-We’ll send the download link via Messenger:
-
-## [Send to Messenger](https://m.me/teembrdesigns?ref=w1806272)
+We’ll send the download link via Messenger: [Send to Messenger](https://m.me/teembrdesigns?ref=w1806272)
