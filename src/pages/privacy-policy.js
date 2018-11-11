@@ -2,12 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet';
+import logo from '../img/logo.png';
 
 export default class PrivacyPolicyPage extends React.Component {
   render() {
     return (
       <section className="privacy">
-        <Helmet title="Privacy | Teembr" />
+        <Helmet title="Privary | Teembr" 
+          meta={[
+              { name: 'description', content: 'We help businesses create products and brands. Helping businesses with everything from branding, product design and social media strategies.' },
+              { name: 'keywords', content: 'branding, branding identity, branded content, branding strategies' },
+          ]}
+          link={[
+              { rel: 'shortcut icon', type: 'image/png', href: `${logo}` }
+          ]} />
         <div>
           <h2>Teembr Privacy Policy</h2>
 

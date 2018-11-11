@@ -4,12 +4,20 @@ import Link from 'gatsby-link'
 import TeamMemberCard from '../components/TeamMemberCard';
 import imagePathHelper from '../components/helper/imagePathHelper';
 import Helmet from 'react-helmet';
+import logo from '../img/logo.png';
 
 export default class AboutUsPage extends React.Component {
   render() {
     return (
       <div>
-        <Helmet title="About Us | Teembr" />
+        <Helmet title="About Us | Teembr" 
+          meta={[
+              { name: 'description', content: 'We help businesses create products and brands. Helping businesses with everything from branding, product design and social media strategies.' },
+              { name: 'keywords', content: 'branding, branding identity, branded content, branding strategies' },
+          ]}
+          link={[
+              { rel: 'shortcut icon', type: 'image/png', href: `${logo}` }
+          ]} />
         <section className="team-info">
           <img src={imagePathHelper("about-us/team.jpg")} />
           <div>

@@ -5,6 +5,7 @@ import CaseStudies from '../components/CaseStudies';
 import Testimonials from '../components/Testimonials';
 import imagePathHelper from '../components/helper/imagePathHelper';
 import Helmet from 'react-helmet';
+import logo from '../img/logo.png';
 
 export default class IndexPage extends React.Component {
   
@@ -14,7 +15,14 @@ export default class IndexPage extends React.Component {
 
     return (
       <div>
-        <Helmet title="Teembr" />
+        <Helmet title="Teembr" 
+          meta={[
+              { name: 'description', content: 'We help businesses create products and brands. Helping businesses with everything from branding, product design and social media strategies.' },
+              { name: 'keywords', content: 'branding, branding identity, branded content, branding strategies' },
+          ]}
+          link={[
+              { rel: 'shortcut icon', type: 'image/png', href: `${logo}` }
+          ]} />
         <section className="jumbotron">
           <div>
             <div>
