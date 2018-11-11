@@ -20,7 +20,7 @@ So to cut things short, I and my team created designs specifically for Mother’
 
 <img src="https://res.cloudinary.com/teembr/image/upload/v1541897210/img/blog/1_GkOY1Sperp6lOVmYwGAQHw.jpg" class="img-center" />
 
-<p style="text-align: center">Here’s some snippet as to what you’ll be able to download.</p>
+<p class="img-caption">Here’s some snippet as to what you’ll be able to download.</p>
 
 ## Features:
 
@@ -40,4 +40,4 @@ So to cut things short, I and my team created designs specifically for Mother’
 
 <p class="custom-hr"></p>
 
-<p>We’ll send the download link via Messenger: <a class="btn" href="https://m.me/teembrdesigns?ref= w1806272" style="width: 250px">Send to Messenger</a></p>
+<p class="resources-download">We’ll send the download link via Messenger: <a class="btn" href="https://m.me/teembrdesigns?ref= w1806272">Send to Messenger</a></p>

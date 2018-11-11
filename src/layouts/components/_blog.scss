@@ -246,6 +246,26 @@
         font-weight: bold;
     }
 
+    .resources-download {
+        font-size: 1.5em !important;
+        font-weight: bold;
+        text-align: center;
+
+        a {
+            width: 250px;
+            padding: .5em;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+
+    .img-caption {
+        text-align: center;
+        font-weight: 100;
+        margin-top: -1em !important;
+    }
+
     .img-left {
         @include mappy-bp(tablet) {
             float: left;
