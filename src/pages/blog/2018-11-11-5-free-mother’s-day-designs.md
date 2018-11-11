@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 5 FREE Mother’s Day Designs
+title: Giving Away 5 FREE Mother’s Day Designs for your POD
 date: '2018-04-25T08:46:11+08:00'
 description: >-
   It’s that time of year again when husbands, wives, children, and other friends
@@ -20,7 +20,7 @@ So to cut things short, I and my team created designs specifically for Mother’
 
 <img src="https://res.cloudinary.com/teembr/image/upload/v1541897210/img/blog/1_GkOY1Sperp6lOVmYwGAQHw.jpg" class="img-center" />
 
-Here’s some snippet as to what you’ll be able to download.
+<p style="text-align: center">Here’s some snippet as to what you’ll be able to download.</p>
 
 ## Features:
 
