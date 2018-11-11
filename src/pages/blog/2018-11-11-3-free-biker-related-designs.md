@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 3 FREE Biker Related Designs
+title: 3 Custom-made Biker Related Designs for your Store. It's Free!
 date: '2018-05-16T11:10:33+08:00'
 description: >-
   Whether you or someone you know enjoy riding motorcycles, are part of a biker
