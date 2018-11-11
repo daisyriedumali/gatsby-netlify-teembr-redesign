@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Are you ready to rate how poor of a leader are you? It's time to reevaluate!
+title: Are you ready to rate how poor of a leader are you?
 date: '2018-11-11T11:24:54+08:00'
 description: >-
   In a classic working environment, people get a promotion when they are good at
@@ -13,11 +13,12 @@ description: >-
 tags:
   - Self Improvement
   - Leadership
+  - Startup Lessons
 image: /img/blog/1_ublw-p1ibdqzzqn0xobrww.jpeg
 authorImage: /img/blog/me1.jpg
 authorName: Daisy Dumali
 ---
-<img src="https://res.cloudinary.com/teembr/image/upload/v1541906210/img/blog/1_gt6akRSDHLBc9KmyDeAmYw.jpg" class="img-full" />
+<img src="https://res.cloudinary.com/teembr/image/upload/v1541906726/img/blog/1_ublw-P1ibdQzZqN0XobRWw.jpg" class="img-full" />
 
 What the upper management failed to look at is that there is more to the job of leadership than just being good at their own craft or the length of their tenure. Reality check, being a good leader does not means having a profile that is flying in colors. (The Peter Principle)
 
