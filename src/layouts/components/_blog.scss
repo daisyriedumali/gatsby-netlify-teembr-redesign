@@ -189,6 +189,7 @@
 
         img {
             display: block;
+            max-width: 100%;
         }
 
         p {
@@ -406,6 +407,7 @@
             &.google-plus { background-color: $google-plus; }
             &.linkedin { background-color: $linkedin; }
             &.medium { background-color: $medium; }
+            &.dribbble { background-color: $dribbble; }
         }
     }
 }

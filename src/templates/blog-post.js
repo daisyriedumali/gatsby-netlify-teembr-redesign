@@ -56,6 +56,7 @@ export const BlogPostTemplate = ({
                         <a href="" className="linkedin"><i className="fa fa-linkedin" /></a>
                         <a href="" className="google-plus"><i className="fa fa-google-plus" /></a>
                         <a href="" className="twitter"><i className="fa fa-twitter" /></a>
+                        <a href="" className="dribbble"><i className="fa fa-dribbble" /></a>
                       </div>
                     </div>
                   </div>
