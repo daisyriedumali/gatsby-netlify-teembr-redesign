@@ -172,6 +172,7 @@
     }
     p.description {
         font-size: 1.5em;
+        font-weight: 400;
         line-height: 1.25em;
         margin: 1em auto 2em;
         @extend .center-blog-element;
@@ -218,7 +219,7 @@
                 margin: 0;
             }
         
-            &:before {
+            /*&:before {
                 content: "...";
                 display: block;
                 text-align: center;
@@ -233,8 +234,37 @@
                 padding: 1em 0 0;
                 letter-spacing: 0.75em;
                 font-weight: bold;
-            }
+            }*/
         }
+    }
+
+    .custom-hr:before {
+        content: "...";
+        display: block;
+        text-align: center;
+        padding: 1em 0 0;
+        letter-spacing: 0.75em;
+        font-weight: bold;
+    }
+
+    .resources-download {
+        font-size: 1.5em !important;
+        font-weight: bold;
+        text-align: center;
+
+        a {
+            width: 250px;
+            padding: .5em;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+
+    .img-caption {
+        text-align: center;
+        font-weight: 100;
+        margin-top: -1em !important;
     }
 
     .img-left {

@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import BlogCard from '../components/BlogCard'
 import BlogNav from '../components/BlogNav'
 import Helmet from 'react-helmet';
+import logo from '../img/logo.png';
 
 export default class Blog extends React.Component {
   render() {
@@ -12,9 +13,16 @@ export default class Blog extends React.Component {
 
     return (
       <section>
-        <Helmet title="Blogs | Teembr" />
+        <Helmet title="Blogs | Teembr" 
+          meta={[
+              { name: 'description', content: 'We help businesses create products and brands. Helping businesses with everything from branding, product design and social media strategies.' },
+              { name: 'keywords', content: 'branding, branding identity, branded content, branding strategies' },
+          ]}
+          link={[
+              { rel: 'shortcut icon', type: 'image/png', href: `${logo}` }
+          ]} />
         <div className="blog">
-            <BlogNav />
+            
             <div className="blog-cards-wrapper">
                 <div className="blog-cards">
                     {posts
@@ -23,7 +31,7 @@ export default class Blog extends React.Component {
                           data={{
                             image    : post.frontmatter.image,
                             title    : post.frontmatter.title,
-                            snippet  : post.excerpt,
+                            snippet  : post.frontmatter.description.substr(0, 400),
                             headshot : post.frontmatter.authorImage,
                             author   : post.frontmatter.authorName,
                             link     : post.fields.slug,
@@ -66,6 +74,7 @@ export const pageQuery = graphql`
             image
             authorImage
             authorName
+            description
           }
         }
       }
