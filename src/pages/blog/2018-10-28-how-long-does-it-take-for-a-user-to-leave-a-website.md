@@ -18,7 +18,7 @@ image: /img/blog/1_nih-gu8xei4jpbhrwkcqqq.jpeg
 authorImage: /img/blog/me1.jpg
 authorName: Daisy Dumali
 ---
-**<img src="https://res.cloudinary.com/teembr/image/upload/v1540732745/img/blog/1_nIH-gU8xeI4JpbhrWKCqQQ.jpg" class="img-full" />**
+<img src="https://res.cloudinary.com/teembr/image/upload/v1/img/blog/1_nIH-gU8xeI4JpbhrWKCqQQ.jpg" class="img-full" />
 
 According to a research by Chao Liu and colleagues from Microsoft Research, there is a mathematical understanding of users’ page-leaving behaviour. It follows a Weibull distribution which used to analyze time-to-failure for components, which in this case the time a user spent on a page.
 
