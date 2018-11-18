@@ -11,7 +11,7 @@ tags:
   - Marketing
   - Entrepreneurship
   - Case Study
-image: /img/blog/main-image-banner-victoria-winery.jpg
+image: /img/blog/main_image_banner_victoria_winery.jpg
 authorImage: /img/blog/me1.jpg
 authorName: Daisy Dumali
 ---
