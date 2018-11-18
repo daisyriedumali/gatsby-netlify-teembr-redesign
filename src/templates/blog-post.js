@@ -72,16 +72,17 @@ const BlogPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet 
-                title={`${post.frontmatter.title} | Blog`} 
-                meta={[
-                    { name: 'description', content: post.frontmatter.description },
-                    { name: 'keywords', content: 'branding, branding identity, branded content, branding strategies' },
-                    { name: 'og:image', content: imagePathHelper(post.frontmatter.image) }
-                ]}
-                link={[
-                    { rel: 'shortcut icon', type: 'image/png', href: `${logo}` }
-                ]} />}
+      helmet={
+          <Helmet>
+            <meta name="description" content={post.frontmatter.description} />
+            <meta name="keywords" content='branding, branding identity, branded content, branding strategies' />
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content={post.frontmatter.title} />
+            <meta property="og:url" content={window.location.href} />
+            <meta property="og:image" content={imagePathHelper(post.frontmatter.image)} />
+            <link rel="shortcut icon" type='image/png' href={logo} />
+          </Helmet>
+          }
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       authorName={post.frontmatter.authorName}
