@@ -25,7 +25,7 @@ After successfully working with many clients and helping them with the creation 
 
 Checking their portfolio and see how well they’ve done their previous projects is a big help in deciding whether a designer can do the job for you. Beautiful and effective designs are your first priority. And by beautiful it means that their designs pleases and you should be able to recognize the amount of quality work they put into each and every design project. Effective means that they are the professionals that specialize in your niche. They are know the standard and best practices for every design that you need which can give an edge to your projects, whether its a branding, apparel or web design.
 
-<img src="https://res.cloudinary.com/teembr/image/upload/v1542550307/img/blog/1_Ta0j5RHwrb4OVzrcEFj_dA.jpg" class="img-center" />
+<img src="https://res.cloudinary.com/teembr/image/upload/c_fill,w_800,h_536/v1/img/blog/1_Ta0j5RHwrb4OVzrcEFj_dA.jpg" class="img-center" />
 
 ## 2. Quality of communications
 
