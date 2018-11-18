@@ -18,7 +18,7 @@ image: /img/blog/1_ublw-p1ibdqzzqn0xobrww.jpeg
 authorImage: /img/blog/me1.jpg
 authorName: Daisy Dumali
 ---
-https://res.cloudinary.com/teembr/image/upload/c_fill,h_800,w_2000/v1/img/blog/1_ublw-P1ibdQzZqN0XobRWw.jpg
+<img src="https://res.cloudinary.com/teembr/image/upload/c_fill,h_800,w_2000/v1/img/blog/1_ublw-P1ibdQzZqN0XobRWw.jpg" class="img-full" />
 
 What the upper management failed to look at is that there is more to the job of leadership than just being good at their own craft or the length of their tenure. Reality check, being a good leader does not means having a profile that is flying in colors. (The Peter Principle)
 
