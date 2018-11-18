@@ -78,6 +78,7 @@ const BlogPost = ({ data, location }) => {
             <meta name="keywords" content='branding, branding identity, branded content, branding strategies' />
             <meta property="og:type" content="article" />
             <meta property="og:title" content={post.frontmatter.title} />
+            <meta property="og:description" content={post.frontmatter.description} />
             <meta property="og:url" content={blogUrl} />
             <meta property="og:image" content={imagePathHelper(post.frontmatter.image)} />
             <link rel="shortcut icon" type='image/png' href={logo} />
