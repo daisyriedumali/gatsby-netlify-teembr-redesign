@@ -2,13 +2,21 @@ import React from 'react'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import logo from '../../img/logo.png';
 
 const TagsPage = ({
   data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
 }) => (
   <section className="section tags-page">
     <div>
-      <Helmet title={`Tags | ${title}`} />
+      <Helmet title={'Tags | Teembr'}
+                  meta={[
+                      { name: 'description', content: 'We help businesses create products and brands. Helping businesses with everything from branding, product design and social media strategies.' },
+                      { name: 'keywords', content: 'branding, branding identity, branded content, branding strategies' }
+                  ]}
+                  link={[
+                      { rel: 'shortcut icon', type: 'image/png', href: `${logo}` }
+                  ]} />
       <div className="container content">
         <div className="columns">
           <div

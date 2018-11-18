@@ -7,6 +7,7 @@ import Author from '../components/Author'
 import BlogNav from '../components/BlogNav'
 import Content, { HTMLContent } from '../components/Content'
 import imagePathHelper from '../components/helper/imagePathHelper'
+import logo from '../img/logo.png';
 
 export const BlogPostTemplate = ({
   content,
@@ -71,7 +72,16 @@ const BlogPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+      helmet={<Helmet 
+                title={`${post.frontmatter.title} | Blog`} 
+                meta={[
+                    { name: 'description', content: post.frontmatter.description },
+                    { name: 'keywords', content: 'branding, branding identity, branded content, branding strategies' },
+                    { name: 'og:image', content: imagePathHelper(post.frontmatter.image) }
+                ]}
+                link={[
+                    { rel: 'shortcut icon', type: 'image/png', href: `${logo}` }
+                ]} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       authorName={post.frontmatter.authorName}
@@ -98,6 +108,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        image
         authorName
         authorImage
       }
