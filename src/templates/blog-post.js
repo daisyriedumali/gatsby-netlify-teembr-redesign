@@ -64,9 +64,9 @@ BlogPostTemplate.propTypes = {
   authorImage: PropTypes.string,
 }
 
-const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
-
+const BlogPost = ({ data, location }) => {
+  const { markdownRemark: post } = data;
+  const blogUrl = "https://eloquent-volhard-97fa44.netlify.com" + location.pathname;
   return (
     <BlogPostTemplate
       content={post.html}
@@ -78,7 +78,7 @@ const BlogPost = ({ data }) => {
             <meta name="keywords" content='branding, branding identity, branded content, branding strategies' />
             <meta property="og:type" content="article" />
             <meta property="og:title" content={post.frontmatter.title} />
-            <meta property="og:url" content={window.location.href} />
+            <meta property="og:url" content={blogUrl} />
             <meta property="og:image" content={imagePathHelper(post.frontmatter.image)} />
             <link rel="shortcut icon" type='image/png' href={logo} />
           </Helmet>
