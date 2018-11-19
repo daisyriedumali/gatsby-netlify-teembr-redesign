@@ -139,6 +139,11 @@ a.btn {
     }
     .subscribe {
         display: flex;
+
+        form {
+            display: flex;
+        }
+        
         input[type="email"] {
             border-radius: 50px 0 0 50px;
             border: 1px solid $border-color;

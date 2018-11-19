@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import CaseStudiesCard from '../components/CaseStudiesCard'
 
+const caseStudiesData = [
+    {
+        title: "Branding and Identity for Victoria Winery",
+        image: "https://res.cloudinary.com/teembr/image/upload/v1/img/blog/main_image_banner_victoria_winery.jpg",
+        url  : "https://eloquent-volhard-97fa44.netlify.com/blog/2018-11-18-a-case-study-branding-and-identity-for-victoria-winery/"
+    }
+];
 class CaseStudies extends Component {
     
     componentDidMount() {
@@ -21,9 +28,7 @@ class CaseStudies extends Component {
                 <div>
                     <h3 className="section-title">Case Studies</h3>
                     <div className="case-studies-cards">
-                        <CaseStudiesCard />
-                        <CaseStudiesCard />
-                        <CaseStudiesCard />
+                        <CaseStudiesCard caseStudy={caseStudiesData[0]}/>
                     </div>
                 </div>
             </div>

@@ -1,12 +1,17 @@
 import React from 'react'
 
+const submitted = false;
+
 const Footer = () => (
   <div className="footer">
     <div className="footer-links">
         <div className="subscribe-wrapper">
             <div className="subscribe">
-                <input type="email" placeholder="Subscribe to Newsletter" />
-                <input type="submit" value="Subscribe" />
+                <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdoZowXqzreJO4AjOZhVu59RN4YnRAa6KS7C3sleKfop3T9SQ/formResponse"
+                    method="POST" target="hidden_iframe" >
+                    <input type="email" name="emailAddress" required placeholder="Subscribe to Newsletter" />
+                    <input type="submit" value="Subscribe" />
+                </form>
             </div>
         </div>
         <div className="links">

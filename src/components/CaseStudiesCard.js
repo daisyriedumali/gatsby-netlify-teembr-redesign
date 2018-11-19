@@ -36,9 +36,9 @@ class CaseStudiesCard extends Component {
     render() {
         return (
             <div className="case-studies-card">
-	            <img src={imagePathHelper("case-studies/crazy-rich-asians.jpg")} />
-                <h3>Crazy Rich Asians</h3>
-                <a href="" className="btn" onClick={this.showModal}>Read More</a>
+	            <img src={this.props.caseStudy.image} />
+                <h3>{this.props.caseStudy.title}</h3>
+                <a href={this.props.caseStudy.url} className="btn">Read More</a>
                 
                 { this.state.isShowModal &&
                     <Modal 
