@@ -81,6 +81,7 @@ const BlogPost = ({ data, location }) => {
             <meta property="og:description" content={post.frontmatter.description} />
             <meta property="og:url" content={blogUrl} />
             <meta property="og:image" content={imagePathHelper(post.frontmatter.image)} />
+            <meta property="fb:app_id" content="886703824858261" />
             <link rel="shortcut icon" type='image/png' href={logo} />
           </Helmet>
           }
