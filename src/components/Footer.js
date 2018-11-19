@@ -31,7 +31,7 @@ const Footer = () => (
                 <a href="https://www.instagram.com/teembrdesigns" target="_blank" rel="nofollow noopener"><i className="fa fa-instagram"></i></a>
                 <a href="https://www.pinterest.ph/teembr/" target="_blank" rel="nofollow noopener"><i className="fa fa-pinterest"></i></a>
                 <a href="https://teembr-works.tumblr.com/" target="_blank" rel="nofollow noopener"><i className="fa fa-tumblr"></i></a>
-                <a href="/" target="_blank" rel="nofollow noopener"><i className="fa fa-linkedin"></i></a>
+                <a href="https://www.behance.net/teembrdesigns" target="_blank" rel="nofollow noopener"><i className="fa fa-behance"></i></a>
             </div>
         </div>
     </div>
