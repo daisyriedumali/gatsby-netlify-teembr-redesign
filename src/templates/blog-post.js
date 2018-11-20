@@ -66,7 +66,7 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data, location }) => {
   const { markdownRemark: post } = data;
-  const blogUrl = "https://eloquent-volhard-97fa44.netlify.com" + location.pathname;
+  const blogUrl = "www.teembr.com" + location.pathname;
   return (
     <BlogPostTemplate
       content={post.html}
