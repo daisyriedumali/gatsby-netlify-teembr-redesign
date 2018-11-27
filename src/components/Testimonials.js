@@ -49,7 +49,7 @@ class Testimonials extends Component {
           <div className="testimonial-cards">
               {this.getTestimonialCards()}
           </div>
-          <a href="https://www.facebook.com/teembrdesigns/reviews" target="_blank" rel="nofollow noopener">See All Testimonials</a>
+          {/*<a href="https://www.facebook.com/teembrdesigns/reviews" target="_blank" rel="nofollow noopener">See All Testimonials</a>*/}
         </div>
       </div>
     );
