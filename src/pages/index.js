@@ -34,7 +34,7 @@ export default class IndexPage extends React.Component {
           </div>
         </section>
         <ServicesSection />
-        <CaseStudies />
+        {/*<CaseStudies />*/}
         <Testimonials />
         <section className="call-to-action">
             <p>Interested in collaborating with us?</p>
