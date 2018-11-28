@@ -19,7 +19,7 @@ export default class AboutUsPage extends React.Component {
               { rel: 'shortcut icon', type: 'image/png', href: `${logo}` }
           ]} />
         <section className="team-info">
-          <img src={imagePathHelper("about-us/team.jpg")} />
+          <img src={imagePathHelper("about-us/team2.jpg")} />
           <div>
             <h1>About the Team</h1>
             <p>We are a group of passionate individuals who aims to help businesses create products and brands through creative design.</p>
