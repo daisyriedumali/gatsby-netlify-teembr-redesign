@@ -12,7 +12,7 @@ const BlogCard = ({ iconfill, data }) => {
                 <div className="author-info">
                     <img src={imagePathHelper(data.headshot)} />
                     <div>
-                        <span className="author-name">{data.author}</span>
+                        <span className="author-name">{(data.author == "Daisy Dumali") ? "Lorem Ipsum" : "Dolor Sit Amet"}</span>
                         <span>{data.date}</span>
                     </div>
                 </div>
