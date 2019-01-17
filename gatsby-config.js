@@ -47,6 +47,12 @@ module.exports = {
         gtmPreview: "env-7",
       },
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '321579318669879',
+      },
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
