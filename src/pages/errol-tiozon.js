@@ -27,8 +27,6 @@ export default class ErrolTiozonPage extends React.Component {
             <p>Address: Barangay 95-A Caibaan, Tacloban City, Leyte, Philippines 6500</p>
 
             <p>Contact Number: +63 905 254 8477</p>
-
-            <p>Thus, it is our goal to be able to help businesses create products and brands through creative design.</p>
           </div>
         </section>
         
